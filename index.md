@@ -1,6 +1,6 @@
 ---
-layout: page
-titel: perryOnCrack's Website
+layout: default
+title: perryOnCrack's Website
 ---
 
 # Hehe...　ｍ　ｏ　ｎ　ｋ　ｅ
