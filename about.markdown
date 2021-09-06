@@ -18,7 +18,8 @@ I'm using this website as my photography blog and development blog for future so
     
     **A reverse proxy for https://github.com/trampgeek/jobe written in Python using Flask and Requests.**
 
-    This is my project for university graduation.
+    This is the project for my bachelor degree in computer science.
+    
     It's a reverse proxy that implements Jobe's REST API in order to do load balancing over multiple Jobe servers instead of one like its original design. 
     
     Most of its code was written around July and August of 2020, I'm a little proud of myself for finish writing it from scratch in this short amount time.
