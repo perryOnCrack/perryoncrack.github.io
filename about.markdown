@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+## [zh-tw PDF](assets/side-proj.pdf)
+
 # **About Me**
 
 A soon-to-be-software-developer photography enthusiast trying to write something about the thing he love on the World Wide Web, under the name perryOnCrack.
