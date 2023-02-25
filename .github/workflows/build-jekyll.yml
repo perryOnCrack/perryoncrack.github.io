@@ -10,6 +10,8 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    env:
+      JEKYLLGRAM_TOKEN: ${{ secrets.JEKYLLGRAM_TOKEN }}
     steps:
       - uses: actions/checkout@v3
 
