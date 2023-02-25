@@ -26,6 +26,7 @@ jobs:
       - uses: jeffreytse/jekyll-deploy-action@v0.4.0
         env:
           JEKYLLGRAM_TOKEN: ${{ secrets.JEKYLLGRAM_TOKEN }}
+
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
