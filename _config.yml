@@ -156,7 +156,7 @@ header_pages:
 defaults:
   home:
     heading: "perryOnCrack's Devlog & Portfolio"
-    subheading: "Indie developments & photography"
+    subheading: "Indie app(?) developments & photography"
     banner: "./assets/images/banner/poop.jpg"
 
 # Banner default settings
