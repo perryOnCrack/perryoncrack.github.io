@@ -11,7 +11,7 @@ comments: false
 
     Make morse code signal with your phone's flash light.
 
-    Written in Java & I'm in the process of rewriting it with Kotlin & adding more feature.
+    Written in Java & I'm in the process of rewriting it in Kotlin & adding more feature.
 
 - ### Small Scripts ([Github](https://github.com/perryOnCrack/Small-Scripts))
 

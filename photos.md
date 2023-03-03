@@ -6,4 +6,4 @@ permalink: /photos/
 
 ## Recent Photos
 
-See more at my [Instagram Page](https://www.instagram.com/perryoncrack/)
+See more at my [Instagram Profile](https://www.instagram.com/perryoncrack/)
