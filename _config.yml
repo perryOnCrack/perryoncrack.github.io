@@ -157,7 +157,7 @@ defaults:
   home:
     heading: "perryOnCrack's Devlog & Portfolio"
     subheading: "Indie app(?) developments & photography"
-    banner: "./assets/images/banner/poop.jpg"
+    banner: "./assets/images/banner/meat.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
