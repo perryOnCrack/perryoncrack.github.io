@@ -7,15 +7,23 @@ comments: false
 
 ## Current Projects
 
-- ### poc's Film Tracking App
+- ### poc's Film Tracker
 
-    An app for tracking user's film stock, a inventory management tool.
+    An app for managing user's film usage, currently in development.
+
+    Written in Modern Android Architecture, with Kotlin, Jetpack Compose, Room...etc.
+
+    - [Privacy Policy](../legal/pft/privacy.html)
+    - [Terms & Conditions](../legal/pft/terms.html)
 
 - ### Morse Code Torch ([Google Play Store](https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite))
 
     Make morse code signal with your phone's flash light.
 
-    Re-written in Kotlin & will slowly adding more feature in the future.
+    Re-written in Kotlin & planing to add more feature in the future.
+
+    - [Privacy Policy](../legal/mct/privacy.html)
+    - [Terms & Conditions](../legal/mct/terms.html)
 
 - ### Small Scripts ([Github](https://github.com/perryOnCrack/Small-Scripts))
 
