@@ -3,7 +3,7 @@ layout: post
 categories: DevLog
 title: New Update for Morse Code Torch!!
 date: 2023-03-04 22:00:00 +0800
-tags: [android, devlog]
+tags: [android, devlog, update]
 ---
 
 After almost 3 years of abandonment of this little app I wrote as an assignment of a course I took, a new update is on its way to the Play Store in a few days.
