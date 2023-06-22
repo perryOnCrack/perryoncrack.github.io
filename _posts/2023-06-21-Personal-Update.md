@@ -1,9 +1,9 @@
 ---
 layout: post
-categories: DevLog
+categories: Update
 title: What I've Been Doing In The Past Year
 date: 2023-06-21 12:00:00 +0800
-tags: [Personal Update]
+tags: [personal update]
 ---
 
 ### When you were a graduated and get in to a job you don't like and decided quit after just 6 months, what do you do next?

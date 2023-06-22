@@ -155,9 +155,9 @@ header_pages:
 # Page default value
 defaults:
   home:
-    heading: "perryOnCrack's Devlog & Portfolio"
+    heading: "perryOnCrack's Devlog & Photos"
     subheading: "Indie app developments & photography"
-    banner: "./assets/images/banner/cloud.jpg"
+#    banner: "./assets/images/banner/cloud.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

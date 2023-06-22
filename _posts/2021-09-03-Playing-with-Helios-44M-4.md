@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: Photography-Portfolio
+categories: Photography
 title: Helios-44M-4
 date: 2021-09-03 23:50:00 +0800
 tags: [photography, lenses]
