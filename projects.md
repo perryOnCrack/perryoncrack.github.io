@@ -7,16 +7,20 @@ comments: false
 
 ## Current Projects
 
-- ### poc's Film Tracker
+- ### poc's Film Tracker ([Google Play Store](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker))
 
-    An app for managing user's film usage, currently in development.
+    [![Play Store Link](/assets/images/projects/pft-banner2.png){: height="160" }]((https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker))
 
-    Written in Modern Android Architecture, with Kotlin, Jetpack Compose, Room...etc.
+    An inventory manage app for managing user's film usage and personal stock.
+
+    Written in Kotlin & Jetpack Compose with Modern Android Architecture.
 
     - [Privacy Policy](../legal/pft/privacy.html)
     - [Terms & Conditions](../legal/pft/terms.html)
 
 - ### Morse Code Torch ([Google Play Store](https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite))
+
+    ![](/assets/images)
 
     Make morse code signal with your phone's flash light.
 
