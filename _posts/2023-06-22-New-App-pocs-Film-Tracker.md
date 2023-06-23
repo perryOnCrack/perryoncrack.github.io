@@ -2,7 +2,7 @@
 layout: post
 categories: DevLog
 title: "New App Release: poc's Film Tracker"
-date: 2023-06-30 12:00:00 +0800
+date: 2023-06-23 12:00:00 +0800
 tags: [android, devlog]
 banner:
     image: "./assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/banner.png"
