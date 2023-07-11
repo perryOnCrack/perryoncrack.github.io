@@ -7,18 +7,29 @@ comments: false
 
 ## Current Projects
 
-- ### poc's Film Tracker ([Google Play Store](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker))
+- ### ReZ Launcher
 
-    [![Play Store Link](/assets/images/projects/pft-banner2.png){: height="160" }]((https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker))
+    A launcher that took heavy inspiration from Nokia's (discontinued) Z Launcher.
+
+    Written in Kotlin & Jetpack Compose with Modern Android Architecture.
+
+    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.rez)
+    - [Privacy Policy](../legal/rez/privacy.html)
+    - [Terms & Conditions](../legal/rez/terms.html)
+
+- ### poc's Film Tracker
+
+    [![Play Store Link](/assets/images/projects/pft-banner2.png){: height="160" }](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker)
 
     An inventory manage app for managing user's film usage and personal stock.
 
     Written in Kotlin & Jetpack Compose with Modern Android Architecture.
 
+    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker)
     - [Privacy Policy](../legal/pft/privacy.html)
     - [Terms & Conditions](../legal/pft/terms.html)
 
-- ### Morse Code Torch ([Google Play Store](https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite))
+- ### Morse Code Torch
 
     ![](/assets/images)
 
@@ -26,16 +37,15 @@ comments: false
 
     Re-written in Kotlin & planing to add more feature in the future.
 
+    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite)
     - [Privacy Policy](../legal/mct/privacy.html)
     - [Terms & Conditions](../legal/mct/terms.html)
 
-- ### Small Scripts ([Github](https://github.com/perryOnCrack/Small-Scripts))
+- ### Small Scripts
 
     Some scripts I wrote, maybe you can find something useful in it.
 
-- ### poc's Toolbox
-
-    An multi-tool Android app with multiple small functions that can be easily accessed.
+    - [Github link](https://github.com/perryOnCrack/Small-Scripts)
 
 ---
 
@@ -68,3 +78,11 @@ comments: false
     This was my attempt to write a script to unpack this game's *.pak file using Python.
 
     It works well enough but it was my earlier project so part of the code made me cringe a little bit.
+
+---
+
+## On Pause Projects
+
+- ### poc's Toolbox
+
+    An multi-tool Android app with multiple small functions that can be easily accessed.
