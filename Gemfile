@@ -26,3 +26,5 @@ end
 gem "webrick"
 
 gem "jekyll-theme-yat"
+
+gem 'jekyll-redirect-from'
