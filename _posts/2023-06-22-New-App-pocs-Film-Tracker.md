@@ -32,9 +32,9 @@ It's inventory management app for keeping track on user's film roll stocking and
 
 ## Screenshots
 
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![Main Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-01.png){: width="320" } | ![Inventory Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-02.png){: width="320" } |
-| ![Search](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-03.png){: width="320" } | ![Use Film Dialog](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-04.png){: width="320" } |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| ![Main Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-01.png){: width="320" : height="auto"}| ![Inventory Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-02.png){: width="320" : height="auto"} |
+| ![Search](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-03.png){: width="320" : height="auto"}     | ![Use Film Dialog](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-04.png){: width="320" : height="auto"}  |
 
 ## Planned Features
 

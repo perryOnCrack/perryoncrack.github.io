@@ -25,6 +25,6 @@ end
 
 gem "webrick"
 
-gem "jekyll-theme-yat"
+gem "jekyll-theme-yat", "1.9.0"
 
 gem 'jekyll-redirect-from'

@@ -51,7 +51,7 @@ GEM
       jekyll (>= 3.6, < 5.0)
       nokogiri (~> 1.6)
       rainbow (~> 3.0)
-    jekyll-theme-yat (1.10.0)
+    jekyll-theme-yat (1.9.0)
       jekyll (> 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-paginate (~> 1.1)
@@ -105,7 +105,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-spaceship
-  jekyll-theme-yat
+  jekyll-theme-yat (= 1.9.0)
   webrick
 
 BUNDLED WITH
