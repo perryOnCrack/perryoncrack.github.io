@@ -5,84 +5,68 @@ permalink: /projects/
 comments: false
 ---
 
-## Current Projects
+## Android Apps
 
-- ### ReZ Launcher
+### [ReZ Launcher](/rez)
 
-    A launcher that took heavy inspiration from Nokia's (discontinued) Z Launcher.
+A launcher that took heavy inspiration from Nokia's (discontinued) Z Launcher.
 
-    Written in Kotlin & Jetpack Compose with Modern Android Architecture.
+Written in Kotlin & Jetpack Compose with Modern Android Architecture.
 
-    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.rez)
-    - [Privacy Policy](../legal/rez/privacy.html)
-    - [Terms & Conditions](../legal/rez/terms.html)
+- [Changelogs](/apps/rez)
 
-- ### poc's Film Tracker
+### [poc's Film Tracker](/pft)
 
-    [![Play Store Link](/assets/images/projects/pft-banner2.png){: height="160" }](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker)
+An inventory manage app for managing user's film usage and personal stock.
 
-    An inventory manage app for managing user's film usage and personal stock.
+Written in Kotlin & Jetpack Compose with Modern Android Architecture.
 
-    Written in Kotlin & Jetpack Compose with Modern Android Architecture.
+- [Changelogs](/apps/pft)
 
-    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker)
-    - [Privacy Policy](../legal/pft/privacy.html)
-    - [Terms & Conditions](../legal/pft/terms.html)
+### [Morse Code Torch](/mct)
 
-- ### Morse Code Torch
+Make morse code signal with your phone's flashlight, screen & vibrator.
 
-    ![](/assets/images)
+Original written in Java & XML, Re-written in Kotlin & Jetpack Compose.
 
-    Make morse code signal with your phone's flash light.
+- [Changelogs](/apps/mct)
 
-    Re-written in Kotlin & planing to add more feature in the future.
+### (ON PAUSE) poc's Toolbox
 
-    - [Play Store link](https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite)
-    - [Privacy Policy](../legal/mct/privacy.html)
-    - [Terms & Conditions](../legal/mct/terms.html)
-
-- ### Small Scripts
-
-    Some scripts I wrote, maybe you can find something useful in it.
-
-    - [Github link](https://github.com/perryOnCrack/Small-Scripts)
+An multi-tool Android app with multiple small functions that can be easily accessed.
 
 ---
 
-## Past Programming Projects
+## Other Programming Projects
 
-- ### Reverse Proxy for Jobe ([Github](https://github.com/perryOnCrack/Reverse-Proxy-for-Jobe))
+### [Small Scripts](https://github.com/perryOnCrack/Small-Scripts)
 
-    A reverse proxy for https://github.com/trampgeek/jobe written in Python using Flask and Requests.
+Some scripts I wrote, maybe you can find something useful in it.
 
-    This is the graduation project for my bachelor degree in computer science.
+### [Reverse Proxy for Jobe](https://github.com/perryOnCrack/Reverse-Proxy-for-Jobe)
 
-    It's a reverse proxy that implements Jobe's REST API in order to do load balancing over multiple Jobe servers instead of one like its original design.
+A reverse proxy for https://github.com/trampgeek/jobe written in Python using Flask and Requests.
 
-    Most of its code was written around July and August of 2020, I'm a little proud of myself for finish writing it from scratch in this short amount time.
+This is the graduation project for my bachelor degree in computer science.
 
-    ~~I'm thinking about doing a rewrite or update to this project because there's a lot of stuff I think I can redesign and improve.~~
+It's a reverse proxy that implements Jobe's REST API in order to do load balancing over multiple Jobe servers instead of one like its original design.
 
-- ### Rock Paper Scissors VB ([Github](https://github.com/perryOnCrack/Rock-Paper-Scissors-VB))
+Most of its code was written around July and August of 2020, I'm a little proud of myself for finish writing it from scratch in this short amount time.
 
-    A rock paper scissors game written in .NET Framework in VB
+~~I'm thinking about doing a rewrite or update to this project because there's a lot of stuff I think I can redesign and improve.~~
 
-    It's a silly rock paper scissor game where you can choose if the player win every time or the program win every time.
+### [Rock Paper Scissors VB](https://github.com/perryOnCrack/Rock-Paper-Scissors-VB)
 
-    This is kind of a joke project for me, it's for the final of a basic-level course I had in my senior year. I finished this within 8 hours from scratch.
+A rock paper scissors game written in .NET Framework in VB
 
-- ### Kao The Kangaroo 2 PAK Tools ([Github](https://github.com/perryOnCrack/Kao-The-Kangaroo-2-PAK-Tools))
+It's a silly rock paper scissor game where you can choose if the player win every time or the program win every time.
 
-    A script to unpack Steam version Kao The Kangaroo 2's *.pak file
+This is kind of a joke project for me, it's for the final of a basic-level course I had in my senior year. I finished this within 8 hours from scratch.
 
-    This was my attempt to write a script to unpack this game's *.pak file using Python.
+### [Kao The Kangaroo 2 PAK Tools](https://github.com/perryOnCrack/Kao-The-Kangaroo-2-PAK-Tools)
 
-    It works well enough but it was my earlier project so part of the code made me cringe a little bit.
+A script to unpack Steam version Kao The Kangaroo 2's *.pak file
 
----
+This was my attempt to write a script to unpack this game's *.pak file using Python.
 
-## On Pause Projects
-
-- ### poc's Toolbox
-
-    An multi-tool Android app with multiple small functions that can be easily accessed.
+It works well enough but it was my earlier project so part of the code made me cringe a little bit.
