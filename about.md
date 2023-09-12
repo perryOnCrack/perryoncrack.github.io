@@ -7,11 +7,9 @@ comments: false
 
 ## About Me
 
-I'm an unemployed photography enthusiast/3D printing enthusiast/Android developer under the online name of perryOnCrack.
+Photography enthusiast/3D printing enthusiast/Android developer under the online name of perryOnCrack.
 
-## Contact Me
-
-You can contact me through any methods below.
+## Contact Methods
 
 - [Email](mailto: perryoncrack@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/perryoncrack/)
