@@ -5,7 +5,28 @@ categories: Android
 title: ReZ Launcher
 ---
 
+## Feature Roadmap
+
+*(Not in any particular order)*
+
+- Notification dot & notification in context menu.
+- Widget support.
+- Contact searching.
+- Recent calendar event on top panel.
+
+---
+
 ## Changelogs
+
+### Version 1.3 (2023-09-16)
+
+- New features:
+    - Analog clock.
+
+- Improvements:
+    - Handwriting should be more responsive on mid-end & low-end devices.
+    - More adaptive screen layout, UI elements won't get covered on shorter screen anymore.
+    - Backend algorithm improvement, app searching should be much faster and less resource intensive.
 
 ### Version 1.2-fix1 (2023-08-12)
 
@@ -34,5 +55,6 @@ title: ReZ Launcher
 
 ---
 
+- [Play Store Link](/rez)
 - [Privacy Policy](/legal/rez/privacy.html)
 - [Terms & Conditions](/legal/rez/terms.html)
