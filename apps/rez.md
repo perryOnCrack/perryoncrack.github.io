@@ -5,14 +5,18 @@ categories: Android
 title: ReZ Launcher
 ---
 
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png){: height="60"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
+
 ## Feature Roadmap
 
 *(Not in any particular order)*
 
-- Notification dot & notification in context menu.
-- Widget support.
-- Contact searching.
-- Recent calendar event on top panel.
+- [ ] Notification dot & notification in context menu
+- [ ] Widget support
+- [ ] Contact searching
+- [ ] Recent calendar event on top panel
+- [ ] Media control on top panel
+- [ ] User manual
 
 ---
 
@@ -55,6 +59,5 @@ title: ReZ Launcher
 
 ---
 
-- [Play Store Link](/rez)
 - [Privacy Policy](/legal/rez/privacy.html)
 - [Terms & Conditions](/legal/rez/terms.html)
