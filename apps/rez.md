@@ -9,14 +9,17 @@ title: ReZ Launcher
 
 ## Feature Roadmap
 
-*(Not in any particular order)*
+- 1.4 in-dev features:
+    - Notification dot & notification in context menu
+    - Hide app from suggestions
+    - New onboarding screens
+    - User manual
 
-- [ ] Notification dot & notification in context menu
-- [ ] Widget support
-- [ ] Contact searching
-- [ ] Recent calendar event on top panel
-- [ ] Media control on top panel
-- [ ] User manual
+- Planned features *(Not in any particular order)*
+    - Widget support
+    - Contact searching
+    - On-coming calendar events on top panel
+    - Media control on top panel
 
 ---
 

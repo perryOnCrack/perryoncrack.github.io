@@ -11,8 +11,8 @@ title: poc's Film Tracker
 
 *(Not in any particular order)*
 
-- [ ] More themes
-- [ ] Widgets
+- More themes
+- Widgets
 
 ---
 
