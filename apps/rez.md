@@ -9,21 +9,28 @@ title: ReZ Launcher
 
 ## Feature Roadmap
 
-- 1.4 in-dev features:
-    - Notification dot & notification in context menu
-    - Hide app from suggestions
-    - New onboarding screens
-    - User manual
-
 - Planned features *(Not in any particular order)*
     - Widget support
     - Contact searching
     - On-coming calendar events on top panel
     - Media control on top panel
+    - More notification style in app info menu
 
 ---
 
 ## Changelogs
+
+### Version 1.4 (2023-09-27)
+
+- New Features:
+    - Update changelog dialog
+    - Notification dot & app notification in app info menu (Enable them in "Settings" -> "Notification Dot")
+    - Hiding apps from suggestions
+    - Improved onboarding experience
+    - Added Korean handwriting support
+
+- Changes:
+    - Quick Launch Area's icons will now adjust their position base on the icon amount.
 
 ### Version 1.3 (2023-09-16)
 
