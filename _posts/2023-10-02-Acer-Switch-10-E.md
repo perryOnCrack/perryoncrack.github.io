@@ -2,7 +2,7 @@
 layout: post
 categories: Linux
 title: "Installing Linux on Acer Switch 10E (SW3-016)"
-date: 2023-09-16 21:00:00 +0800
+date: 2023-10-02 21:00:00 +0800
 tags: [linux, blog]
 ---
 *(This is not a full guide on how to install Manjaro on this system, it's a documentation of the problems I encountered and how I solved it.)*
