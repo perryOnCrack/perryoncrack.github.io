@@ -13,12 +13,26 @@ title: ReZ Launcher
     - Widget support
     - Contact searching
     - On-coming calendar events on top panel
-    - Media control on top panel
     - More notification style in app info menu
 
 ---
 
 ## Changelogs
+
+### Version 1.5 (2023-10-17)
+
+- New Features:
+    - Media Control in the top panel. (Enable this feature in `Settings -> Media Control`)
+    - More fine-grained app hiding, see `Settings -> User Manual -> Hiding App` for more detail.
+
+- Changes:
+    - Quick Launch area will now show an arrow when it's empty.
+
+- Bug fixes:
+    - Fixed an issue where notification dot not being updated properly.
+
+- New bugs:
+    - In the top panel, right after swiping, clicks will sometimes only response after a few more clicks.
 
 ### Version 1.4 (2023-09-27)
 
