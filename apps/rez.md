@@ -9,8 +9,10 @@ title: ReZ Launcher
 
 ## Feature Roadmap
 
-- Planned features *(Not in any particular order)*
+- In development:
     - Widget support
+
+- Planned features *(Not in any particular order)*
     - Contact searching
     - On-coming calendar events on top panel
     - More notification style in app info menu
@@ -18,6 +20,12 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.5-fix1 (2023-10-20)
+
+- Bug Fixes:
+    - Fixed an issue where some notifications can crash the launcher.
+    - Fixed faulty home button detection implementation.
 
 ### Version 1.5 (2023-10-17)
 
@@ -28,10 +36,10 @@ title: ReZ Launcher
 - Changes:
     - Quick Launch area will now show an arrow when it's empty.
 
-- Bug fixes:
+- Bug Fixes:
     - Fixed an issue where notification dot not being updated properly.
 
-- New bugs:
+- New Bugs:
     - In the top panel, right after swiping, clicks will sometimes only response after a few more clicks.
 
 ### Version 1.4 (2023-09-27)
@@ -48,7 +56,7 @@ title: ReZ Launcher
 
 ### Version 1.3 (2023-09-16)
 
-- New features:
+- New Features:
     - Analog clock.
 
 - Improvements:
