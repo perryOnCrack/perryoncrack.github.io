@@ -9,9 +9,6 @@ title: ReZ Launcher
 
 ## Feature Roadmap
 
-- In development:
-    - Widget support
-
 - Planned features *(Not in any particular order)*
     - Contact searching
     - On-coming calendar events on top panel
@@ -20,6 +17,16 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.6 (2023-11-06)
+
+- New Features
+    - Widget support:
+        - Swipe to the left or right in Home Screen to access the new widget space.
+        - You can access widget related settings under `Settings -> Widget`.
+
+- Bug Fixes
+    - App List now fills up the screen properly on wide screen devices.
 
 ### Version 1.5-fix1 (2023-10-20)
 
