@@ -18,6 +18,11 @@ title: ReZ Launcher
 
 ## Changelogs
 
+### Version 1.6-fix1 (2023-11-16):
+
+- Bug Fixes
+    - Fixed app info menu not closing after opening an app shortcut.
+
 ### Version 1.6 (2023-11-06)
 
 - New Features
