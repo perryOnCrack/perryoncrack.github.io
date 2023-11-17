@@ -13,6 +13,7 @@ title: ReZ Launcher
     - Contact searching
     - On-coming calendar events on top panel
     - More notification style in app info menu
+    - Foldable device screen layout.
 
 ---
 
