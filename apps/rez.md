@@ -19,6 +19,16 @@ title: ReZ Launcher
 
 ## Changelogs
 
+### Version 1.6-fix2 (2023-11-19):
+
+- Bug Fixes
+    - Fixed various app crashing problems (hopefully), these include:
+        - Crash when widget list failed to fetch app names.
+        - Crash when failed to launch an app or its app info's activity.
+        - Crash when using the app visibility button popup.
+        - Crash when opening up this launcher.
+    - Fixed launching app shortcut didn't get counted to usage.
+
 ### Version 1.6-fix1 (2023-11-16):
 
 - Bug Fixes
