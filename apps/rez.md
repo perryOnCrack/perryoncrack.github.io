@@ -19,6 +19,11 @@ title: ReZ Launcher
 
 ## Changelogs
 
+### Version 1.6-fix3 (2023-11-21):
+
+- Bug Fixes
+    - Fixed an issue where notification dot will crash the launcher in some condition.
+
 ### Version 1.6-fix2 (2023-11-19):
 
 - Bug Fixes
