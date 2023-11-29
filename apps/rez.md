@@ -9,11 +9,20 @@ title: ReZ Launcher
 
 ## Feature Roadmap
 
+- In Development
+    - Search improvements:
+        - Backend overhaul
+        - Contact searching
+        - App alias
+
 - Planned features *(Not in any particular order)*
-    - Contact searching
-    - On-coming calendar events on top panel
-    - More notification style in app info menu
-    - Foldable device screen layout.
+    - Priorities:
+        - On-coming calendar events on top panel
+        - More notification style in app info menu
+
+    - Non-priorities:
+        - Foldable device screen layout
+        - Option to hide status bar
 
 ---
 
