@@ -23,6 +23,7 @@ title: ReZ Launcher
     - Non-priorities:
         - Foldable device screen layout
         - Option to hide status bar
+        - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
 
 ---
 
