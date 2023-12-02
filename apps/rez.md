@@ -11,19 +11,21 @@ title: ReZ Launcher
 
 - In Development
     - Search improvements:
-        - Backend overhaul
+        - Backend improvement
         - Contact searching
-        - App alias
+        - App & contact alias
 
-- Planned features *(Not in any particular order)*
-    - Priorities:
-        - On-coming calendar events on top panel
-        - More notification style in app info menu
+- Planned features
+    - On-coming calendar events on top panel
+    - More notification style in app info menu
+    - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
 
-    - Non-priorities:
-        - Foldable device screen layout
-        - Option to hide status bar
-        - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
+- No promise but I will look into them:
+    - Work profile app
+    - Icon pack
+    - Option to hide status bar
+    - Adjustable icon size
+    - Foldable device screen layout
 
 ---
 

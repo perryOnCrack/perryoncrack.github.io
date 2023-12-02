@@ -7,7 +7,9 @@ comments: false
 
 ## About Me
 
-Photography enthusiast/3D printing enthusiast/Android developer under the online name of perryOnCrack.
+![PP](/assets/images/head.jpg){: height="180"}
+
+Photography enthusiast/3D printing enthusiast/Junior Android developer under the online name of perryOnCrack.
 
 ## Contact Methods
 
@@ -21,4 +23,5 @@ Photography enthusiast/3D printing enthusiast/Android developer under the online
 - [Instagram (Photography)](https://www.instagram.com/perryoncrack/)
 - [Instagram (3D Printing)](https://www.instagram.com/methlabjerry/)
 - [Printables](https://www.printables.com/social/304298-perryoncrack/about)
-- [Twitter (shitpost only)](https://twitter.com/perryOnCrack)
+- [Threads (People use this?)](https://www.threads.net/@perryoncrack)
+- [X (Shitpost only)](https://twitter.com/perryOnCrack)
