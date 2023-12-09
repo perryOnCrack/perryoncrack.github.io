@@ -42,7 +42,8 @@ title: ReZ Launcher
     - App & contact alias.
 
 - Changes:
-    - Scribble search will now matching the words the app/contact name instead just full name.
+    - Scribble search will now query against the words in the app or contact's name.
+    - More comprehensive user manual.
 
 - Bug Fixes:
     - Various backend stability fixes.
