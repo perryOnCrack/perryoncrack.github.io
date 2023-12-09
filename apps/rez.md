@@ -7,7 +7,7 @@ title: ReZ Launcher
 
 [![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png){: height="60"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
-## Feature Roadmap
+## Development Status
 
 - In Development
     - Search improvements:
@@ -22,14 +22,31 @@ title: ReZ Launcher
 
 - No promise but I will look into them:
     - Work profile app
-    - Icon pack
+    - Icon pack support
     - Option to hide status bar
     - Adjustable icon size
     - Foldable device screen layout
+    - Double tap to lock screen
+
+- Issue to fix
+    - Unable to use Samsung OneUI's gesture navigation
 
 ---
 
 ## Changelogs
+
+### Version 1.7 (Update not ready yet):
+
+- New Feature:
+    - Contact search.
+    - App & contact alias.
+
+- Changes:
+    - Scribble search will now matching the words the app/contact name instead just full name.
+
+- Bug Fixes:
+    - Various backend stability fixes.
+    - Fixed an issue where using pointer device other than touch in the scribble area causing unexpected behaviors.
 
 ### Version 1.6-fix3 (2023-11-21):
 
