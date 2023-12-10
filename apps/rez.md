@@ -19,16 +19,17 @@ title: ReZ Launcher
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
-
-- No promise but I will look into them:
     - Work profile app
-    - Icon pack support
-    - Option to hide status bar
     - Adjustable icon size
-    - Foldable device screen layout
-    - Double tap to lock screen
 
-- Issue to fix
+- "No promise but I will look into them" features
+    - Icon pack support
+    - Double tap to lock screen
+    - Option to hide status bar
+    - Foldable device screen layout
+    - Pinned shortcut
+
+- Known issues
     - Unable to use Samsung OneUI's gesture navigation
 
 ---
