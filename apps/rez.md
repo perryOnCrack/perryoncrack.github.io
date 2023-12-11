@@ -9,12 +9,6 @@ title: ReZ Launcher
 
 ## Development Status
 
-- In Development
-    - Search improvements:
-        - Backend improvement
-        - Contact searching
-        - App & contact alias
-
 - Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
@@ -36,19 +30,21 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Version 1.7 (Update not ready yet):
+### Version 1.7 (2023-12-11):
 
-- New Feature:
-    - Contact search.
-    - App & contact alias.
+- New Features:
+    - Contact search:
+        - You can access its settings under `Settings -> Contact Search`.
+    - App &amp; contact alias:
+        - You can access it in apps/contacts' info menu(long press menu).
 
 - Changes:
-    - Scribble search will now query against the words in the app or contact's name.
-    - More comprehensive user manual.
+    - Scribble search now queries against words in app/contact's name.
+    - Updated user manual, now with GIFs! *(They are animated webp actually.)*
 
 - Bug Fixes:
-    - Various backend stability fixes.
-    - Fixed an issue where using pointer device other than touch in the scribble area causing unexpected behaviors.
+    - Fixed an issue where scribble with pointer devices other than touch causing unexpected behaviors and crashing.
+    - Various stability fixes.
 
 ### Version 1.6-fix3 (2023-11-21):
 
