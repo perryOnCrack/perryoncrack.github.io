@@ -9,15 +9,17 @@ title: ReZ Launcher
 
 ## Development Status
 
+- In development features:
+    - Work profile support
+    - Icon pack support
+    - Adjustable icon size
+
 - Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
-    - Work profile app
-    - Adjustable icon size
 
 - "No promise but I will look into them" features
-    - Icon pack support
     - Double tap to lock screen
     - Option to hide status bar
     - Foldable device screen layout
