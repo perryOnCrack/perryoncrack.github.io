@@ -150,3 +150,5 @@ title: ReZ Launcher
 
 - [Privacy Policy](/legal/rez/privacy.html)
 - [Terms & Conditions](/legal/rez/terms.html)
+
+{% include ko-fi-button.html %}
