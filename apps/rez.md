@@ -9,12 +9,8 @@ title: ReZ Launcher
 
 ## Development Status
 
-- In development features:
-    - Work profile support
-    - Icon pack support
-    - Adjustable icon size
-
 - Planned features
+    - Experimental features to address some navigation gesture issues
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
@@ -31,6 +27,28 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.8 (2023-12-22)
+
+- New Features:
+    - Work profile support:
+        - Supported features:
+            - Work apps: Show in app list, suggestions & search, hidden when work profile is paused.
+            - Work app widgets: Show in widget list, hidden when work profile is paused.
+            - Notification dot for work apps
+        - Unsupported features (due to API constraints):
+            - Media control for work apps
+            - Contact search for work profile contacts
+    - Customization Options: (Access them in `Settings -> Customizations`)
+        - Icon pack support
+        - UI color adjustment
+        - Smaller icon size options
+
+- Changes:
+    - Wallpaper option in Settings has been moved into Customizations menu.
+
+- Bug Fixes:
+    - Various stability fixes.
 
 ### Version 1.7 (2023-12-11):
 
