@@ -28,7 +28,7 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Version 1.8 (2023-12-22)
+### Version 1.8 (2023-12-21)
 
 - New Features:
     - Work profile support:
