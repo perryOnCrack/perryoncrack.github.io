@@ -28,6 +28,11 @@ title: ReZ Launcher
 
 ## Changelogs
 
+### Version 1.8 (2023-12-22)
+
+- Bug Fixes:
+    - Fixed an issue where some Android 14 devices can't add widgets that require configuration.
+
 ### Version 1.8 (2023-12-21)
 
 - New Features:
