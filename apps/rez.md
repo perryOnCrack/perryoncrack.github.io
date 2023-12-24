@@ -10,25 +10,27 @@ title: ReZ Launcher
 ## Development Status
 
 - Planned features
-    - Experimental features to address some navigation gesture issues
+    - Experimental features to address some gesture navigation issues
     - On-coming calendar events on top panel
     - More notification style in app info menu
-    - App list scrollbar (mainly waiting for the official implementation from Jetpack Compose)
+    - App list scrollbar (waiting for the official Jetpack Compose implementation)
+    - Customizable notification dot color
 
 - "No promise but I will look into them" features
     - Double tap to lock screen
     - Option to hide status bar
     - Foldable device screen layout
-    - Pinned shortcut
+    - Pinned shortcut/PWA
 
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
+    - Crash when moving or resizing widgets on some devices
 
 ---
 
 ## Changelogs
 
-### Version 1.8 (2023-12-22)
+### Version 1.8-fix1 (2023-12-22)
 
 - Bug Fixes:
     - Fixed an issue where some Android 14 devices can't add widgets that require configuration.
