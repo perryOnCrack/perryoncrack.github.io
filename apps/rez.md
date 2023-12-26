@@ -9,12 +9,14 @@ title: ReZ Launcher
 
 ## Development Status
 
-- Planned features
+- In-development
+    - Customizable notification dot color
     - Experimental features to address some gesture navigation issues
+
+- Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (waiting for the official Jetpack Compose implementation)
-    - Customizable notification dot color
 
 - "No promise but I will look into them" features
     - Double tap to lock screen
