@@ -10,7 +10,6 @@ title: ReZ Launcher
 ## Development Status
 
 - In-development
-    - Customizable notification dot color
     - Experimental features to address some gesture navigation issues
 
 - Planned features
@@ -31,6 +30,16 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.8.1 (2023-12-28)
+
+- New Features:
+    - Notification dot color is now customizable.
+    - Clicking the date of home screen clock now opens the calendar.
+
+- Bug Fixes:
+    - Fixed some UI elements using the incorrect color & size.
+    - Removed unnecessary permissions.
 
 ### Version 1.8-fix1 (2023-12-22)
 
