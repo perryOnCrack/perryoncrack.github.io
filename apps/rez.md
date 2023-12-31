@@ -14,6 +14,7 @@ title: ReZ Launcher
 
 - Planned features
     - On-coming calendar events on top panel
+    - Update scribble settings screens & backend
     - More notification style in app info menu
     - App list scrollbar (waiting for the official Jetpack Compose implementation)
 
@@ -22,6 +23,7 @@ title: ReZ Launcher
     - Option to hide status bar
     - Foldable device screen layout
     - Pinned shortcut/PWA
+    - Customizable font
 
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
@@ -30,6 +32,11 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.8.1-fix1 (2023-12-31)
+
+- Bug Fixes:
+    - Re-added SET_ALARM permission because some device manufactures' clock apps need it to view alarms.
 
 ### Version 1.8.1 (2023-12-28)
 
