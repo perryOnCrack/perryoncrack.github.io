@@ -10,11 +10,11 @@ title: ReZ Launcher
 ## Development Status
 
 - In-development
+    - Update scribble settings screens & backend
     - Experimental features to address some gesture navigation issues
 
 - Planned features
     - On-coming calendar events on top panel
-    - Update scribble settings screens & backend
     - More notification style in app info menu
     - App list scrollbar (waiting for the official Jetpack Compose implementation)
 
