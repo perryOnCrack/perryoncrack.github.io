@@ -10,7 +10,6 @@ title: ReZ Launcher
 ## Development Status
 
 - In-development
-    - Update scribble settings screens & backend
     - Experimental features to address some gesture navigation issues
 
 - Planned features
@@ -32,6 +31,17 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Next Version
+
+- Changes:
+    - Updated `Scribble Settings`:
+        - Added all languages supported by ML Kit.
+        - Rearranging language precedence is now done with drag &amp; drop.
+        - Added proper install status for languages and the ability to re-download on the spot.
+
+- Bug Fixes:
+    - Disabled delete language button while downloading &amp; deleting it to avoid getting ghost installs.
 
 ### Version 1.8.1-fix1 (2023-12-31)
 
