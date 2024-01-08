@@ -11,7 +11,6 @@ title: ReZ Launcher
 
 - In-development
     - Double tap to lock screen
-    - Option to hide status bar
 
 - Planned features
     - On-coming calendar events on top panel
@@ -34,6 +33,9 @@ title: ReZ Launcher
 ## Changelogs
 
 ### Next Version
+
+- New Features:
+    - Option to hide status bar (Access it in `Settings` -> `Customization` -> `Status Bar`)
 
 - Changes:
     - Updated `Scribble Settings`:
