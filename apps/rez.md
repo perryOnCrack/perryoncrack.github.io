@@ -10,23 +10,24 @@ title: ReZ Launcher
 ## Development Status
 
 - In-development
-    - Experimental features to address some gesture navigation issues
+    - Double tap to lock screen
+    - Option to hide status bar
 
 - Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (waiting for the official Jetpack Compose implementation)
+    - Experimental features to address some gesture navigation issues
 
 - "No promise but I will look into them" features
-    - Double tap to lock screen
-    - Option to hide status bar
     - Foldable device screen layout
     - Pinned shortcut/PWA
-    - Customizable font
+    - Customizable font & font size
 
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
     - Crash when moving or resizing widgets on some devices
+    - Some notifications can crash the launcher
 
 ---
 
@@ -37,11 +38,11 @@ title: ReZ Launcher
 - Changes:
     - Updated `Scribble Settings`:
         - Added all languages supported by ML Kit.
-        - Rearranging language precedence is now done with drag &amp; drop.
+        - Rearranging language precedence is now done by drag & drop.
         - Added proper install status for languages and the ability to re-download on the spot.
 
-- Bug Fixes:
-    - Disabled delete language button while downloading &amp; deleting it to avoid getting ghost installs.
+- Workarounds:
+    - Disabled language delete button while downloading & deleting to avoid getting ghost installs.
 
 ### Version 1.8.1-fix1 (2023-12-31)
 
