@@ -29,13 +29,13 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Next Version
+### Version 1.9 (2024-01-10)
 
 - New Features:
     - Updated Scribble settings:
         - Added all of the ML Kit supported languages.
         - Rearranging language precedence is now done by drag & drop.
-        - Added proper install statuses and the ability to re-download on the spot.
+        - Added proper install status and the ability to re-download on the spot.
     - Option to hide status bar in home screen. (Access it in `Settings` -> `Customization` -> `Status Bar`)
 
 - Bug Fixes/Workarounds:
