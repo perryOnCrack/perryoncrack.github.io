@@ -9,9 +9,6 @@ title: ReZ Launcher
 
 ## Development Status
 
-- In-development
-    - Double tap to lock screen
-
 - Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
@@ -22,6 +19,7 @@ title: ReZ Launcher
     - Foldable device screen layout
     - Pinned shortcut/PWA
     - Customizable font & font size
+    - Double tap to lock screen
 
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
@@ -33,16 +31,14 @@ title: ReZ Launcher
 
 ### Next Version
 
-- Changes:
-    - Updated Scribble settings:
-        - Added all languages supported by ML Kit.
-        - Rearranging language precedence is now done by drag & drop.
-        - Added proper install status for languages and the ability to re-download on the spot.
-
 - New Features:
-    - Option to hide status bar (Access it in `Settings` -> `Customization` -> `Status Bar`)
+    - Updated Scribble settings:
+        - Added all of the ML Kit supported languages.
+        - Rearranging language precedence is now done by drag & drop.
+        - Added proper install statuses and the ability to re-download on the spot.
+    - Option to hide status bar in home screen. (Access it in `Settings` -> `Customization` -> `Status Bar`)
 
-- Workarounds:
+- Bug Fixes/Workarounds:
     - Disabled language delete button while downloading & deleting to avoid getting ghost installs.
     - Fixed an issue where some notifications can crash the launcher.
 
@@ -93,7 +89,7 @@ title: ReZ Launcher
 - New Features:
     - Contact search:
         - You can access its settings under `Settings -> Contact Search`.
-    - App &amp; contact alias:
+    - App & contact alias:
         - You can access it in apps/contacts' info menu(long press menu).
 
 - Changes:
