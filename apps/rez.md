@@ -26,7 +26,6 @@ title: ReZ Launcher
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
     - Crash when moving or resizing widgets on some devices
-    - Some notifications can crash the launcher
 
 ---
 
@@ -34,17 +33,18 @@ title: ReZ Launcher
 
 ### Next Version
 
-- New Features:
-    - Option to hide status bar (Access it in `Settings` -> `Customization` -> `Status Bar`)
-
 - Changes:
-    - Updated `Scribble Settings`:
+    - Updated Scribble settings:
         - Added all languages supported by ML Kit.
         - Rearranging language precedence is now done by drag & drop.
         - Added proper install status for languages and the ability to re-download on the spot.
 
+- New Features:
+    - Option to hide status bar (Access it in `Settings` -> `Customization` -> `Status Bar`)
+
 - Workarounds:
     - Disabled language delete button while downloading & deleting to avoid getting ghost installs.
+    - Fixed an issue where some notifications can crash the launcher.
 
 ### Version 1.8.1-fix1 (2023-12-31)
 
