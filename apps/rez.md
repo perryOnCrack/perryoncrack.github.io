@@ -29,7 +29,12 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Version 1.9 (2024-01-10)
+### Version 1.9-fix1 (2024-01-11)
+
+- Bug Fixes:
+    - Fixed an issue where some app shortcuts can crash the launcher.
+
+### Version 1.9 (2024-01-09)
 
 - New Features:
     - Updated Scribble settings:
