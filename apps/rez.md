@@ -9,20 +9,26 @@ title: ReZ Launcher
 
 ## Development Status
 
+**Due to personal reason, the development will be slowing down for a while.** *(Don't worry, I am not abandoning it, I just need some time to adjust things.)*
+**If you have any suggestions, you can still contact me by emailing to [perryoncrack@gmail.com](mailto:perryoncrack@gmail.com)**
+
 - Planned features
     - On-coming calendar events on top panel
     - More notification style in app info menu
     - App list scrollbar (waiting for the official Jetpack Compose implementation)
     - Experimental features to address some gesture navigation issues
+    - Huge rewrite/refactor of the widget space (there's some spaghetti in there)
 
 - "No promise but I will look into them" features
     - Foldable device screen layout
     - Pinned shortcut/PWA
     - Customizable font & font size
     - Double tap to lock screen
+    - App list grid view (it will break the current UI pattern, some stuff will have to change before it can be implemented.)
 
 - Known issues
     - Unable to use Samsung OneUI's gesture navigation
+        - Update on this issue: It can be reproduced on my friend's phone but can't through Samsung's remote test lab. Maybe it only appears in some OneUI's versions?
     - Crash when moving or resizing widgets on some devices
 
 ---
