@@ -5,31 +5,48 @@ categories: Android
 title: ReZ Launcher
 ---
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png){: height="60"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
+[![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
 ## Development Status
 
-**Due to personal reason, the development will be slowing down for a while.** *(Don't worry, I am not abandoning it, I just need some time to adjust things.)*
-**If you have any suggestions, you can still contact me by emailing to [perryoncrack@gmail.com](mailto:perryoncrack@gmail.com)**
+**Due to personal reason, development will be slowing down for a while.** *(I am not abandoning it, I just need some time to adjust my time.)*
 
-- Planned features
-    - On-coming calendar events on top panel
-    - More notification style in app info menu
-    - App list scrollbar (waiting for the official Jetpack Compose implementation)
-    - Experimental features to address some gesture navigation issues
-    - Huge rewrite/refactor of the widget space (there's some spaghetti in there)
+**If you have any suggestions, you can contact me through contact infos in my [about](/about) page.**
 
-- "No promise but I will look into them" features
-    - Foldable device screen layout
-    - Pinned shortcut/PWA
-    - Customizable font & font size
-    - Double tap to lock screen
-    - App list grid view (it will break the current UI pattern, some stuff will have to change before it can be implemented.)
+### Planned features
 
-- Known issues
-    - Unable to use Samsung OneUI's gesture navigation
-        - Update on this issue: It can be reproduced on my friend's phone but can't through Samsung's remote test lab. Maybe it only appears in some OneUI's versions?
-    - Crash when moving or resizing widgets on some devices
+- On-coming calendar events on top panel
+- More notification style in app info menu
+- App list scrollbar (waiting for the official Jetpack Compose implementation)
+- Experimental features to address some gesture navigation issues
+- Huge rewrite/refactor of the widget space (there's some spaghetti in there)
+
+### "No promise but I will look into them" (user suggested) features
+
+- Double tap to lock screen
+- Pinned shortcut/PWA
+- Customizable font & font size
+- App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
+
+### Some ideas of mine (might not be implemented ever)
+
+- Foldable device screen layout
+- The transition flip animation from the original Z Launcher
+- ML-based suggestion algorithm
+- App structure revamp/refactor
+- Fully customizable UI color
+
+### Won't implement
+
+- From the original Z Launcher:
+    - Web search
+- Google Now page
+
+### Known issues
+
+- Unable to use Samsung OneUI's gesture navigation
+    - Update on this issue: It can be reproduced on my friend's phone but can't through Samsung's remote test lab. Maybe it only appears in some OneUI versions?
+- Crash when moving or resizing widgets on some devices
 
 ---
 
