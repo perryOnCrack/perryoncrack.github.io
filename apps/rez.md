@@ -20,6 +20,7 @@ title: ReZ Launcher
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Experimental features to address some gesture navigation issues
 - Huge rewrite/refactor of the widget space (there's some spaghetti in there)
+- Other launcher language support
 
 ### "No promise but I will look into them" (user suggested) features
 
@@ -51,6 +52,13 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.9-fix1 (2024-01-21)
+- Bug Fixes:
+    - Fixed an issue where toggling work apps can crash the launcher.
+
+- Changes:
+    - `Enable Widget Area` & `Notification Dot Display Order` can be accessed in Customization menu now.
 
 ### Version 1.9-fix1 (2024-01-11)
 
