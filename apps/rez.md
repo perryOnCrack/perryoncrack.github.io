@@ -53,7 +53,7 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Version 1.9-fix1 (2024-01-21)
+### Version 1.9-fix2 (2024-01-21)
 - Bug Fixes:
     - Fixed an issue where toggling work apps can crash the launcher.
 
