@@ -28,6 +28,8 @@ title: ReZ Launcher
 - Pinned shortcut/PWA
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
+- Newly installed apps
+- Variable scribble stroke width (like the original Z Launcher)
 
 ### Some ideas of mine (might not be implemented ever)
 
