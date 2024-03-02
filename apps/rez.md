@@ -9,9 +9,16 @@ title: ReZ Launcher
 
 ## Development Status
 
-**Due to personal reason, development will be slowing down for a while.** *(I am not abandoning it, I just need some time to adjust my time.)*
+**Due to I'm getting a new job, development will be slow down.**
+*(I am not abandoning it, just won't have as much time as before to work on it.)*
 
 **If you have any suggestions, you can contact me through contact infos in my [about](/about) page.**
+
+### In Development
+
+- Newly installed apps
+- Hide docked Apps from suggestion
+- Variable scribble stroke width (like the original Z Launcher)
 
 ### Planned features
 
@@ -22,27 +29,24 @@ title: ReZ Launcher
 - Huge rewrite/refactor of the widget space (there's some spaghetti in there)
 - Other launcher language support
 
-### "No promise but I will look into them" (user suggested) features
+### User Suggested Features & Improvements (might not be implemented ever)
 
 - Double tap to lock screen
 - Pinned shortcut/PWA
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
-- Newly installed apps
-- Variable scribble stroke width (like the original Z Launcher)
 
-### Some ideas of mine (might not be implemented ever)
+### Some ideas of mine (might not be implemented ever as well)
 
 - Foldable device screen layout
 - The transition flip animation from the original Z Launcher
 - ML-based suggestion algorithm
-- App structure revamp/refactor
 - Fully customizable UI color
+- General code refactoring
 
 ### Won't implement
 
-- From the original Z Launcher:
-    - Web search
+- Web search
 - Google Now page
 
 ### Known issues
@@ -54,6 +58,15 @@ title: ReZ Launcher
 ---
 
 ## Changelogs
+
+### Version 1.10 (Upcoming, subject to change)
+
+- New Features:
+    - Newly installed apps are now identifiable in the app list & searchable with the word `New!`. The newly installed status will last 48 hours for each new app.
+
+- Changes:
+    - Docked apps no longer being suggested in the app suggestions.
+        - You can revert this behavior in the settings.
 
 ### Version 1.9-fix2 (2024-01-21)
 - Bug Fixes:
