@@ -3,6 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
+date: 2024-03-16
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,41 +13,43 @@ title: ReZ Launcher
 **Due to I'm getting a new job, development will be slow down.**
 *(I am not abandoning it, just won't have as much time as before to work on it.)*
 
-**If you have any suggestions, you can contact me through contact infos in my [about](/about) page.**
+**If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
 ### In Development
 
 - Newly installed apps
 - Hide docked Apps from suggestion
 - Variable scribble stroke width (like the original Z Launcher)
+- Double tap to lock screen
 
 ### Planned features
 
 - On-coming calendar events on top panel
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
-- Experimental features to address some gesture navigation issues
-- Huge rewrite/refactor of the widget space (there's some spaghetti in there)
+- Huge rewrite/refactor of the widget space (it's spaghetti in there)
 - Other launcher language support
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
-- Double tap to lock screen
 - Pinned shortcut/PWA
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 
 ### Some ideas of mine (might not be implemented ever as well)
 
+- Adjustment to the recommendation algorithm.
 - Foldable device screen layout
 - The transition flip animation from the original Z Launcher
 - ML-based suggestion algorithm
 - Fully customizable UI color
 - General code refactoring
+- Experimental features to address some gesture navigation issues
 
 ### Won't implement
 
 - Web search
+- Device file search
 - Google Now page
 
 ### Known issues
@@ -59,7 +62,7 @@ title: ReZ Launcher
 
 ## Changelogs
 
-### Version 1.10 (Upcoming, subject to change)
+### Version 1.10 (Upcoming, maybe in a few month, can't find much time to work on it. Subject to change)
 
 - New Features:
     - Newly installed apps are now identifiable in the app list & searchable with the word `New!`. The newly installed status will last 48 hours for each new app.
