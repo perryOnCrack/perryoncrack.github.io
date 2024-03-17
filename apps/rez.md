@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-03-16
+date: 2024-03-17
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -27,7 +27,7 @@ date: 2024-03-16
 - On-coming calendar events on top panel
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
-- Huge rewrite/refactor of the widget space (it's spaghetti in there)
+- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
 
 ### User Suggested Features & Improvements (might not be implemented ever)
@@ -62,14 +62,18 @@ date: 2024-03-16
 
 ## Changelogs
 
-### Version 1.10 (Upcoming, maybe in a few month, can't find much time to work on it. Subject to change)
+### Version 1.10 (Upcoming, maybe in a few months idk. Subject to change)
 
 - New Features:
-    - Newly installed apps are now identifiable in the app list & searchable with the word `New!`. The newly installed status will last 48 hours for each new app.
+    - Newly installed apps are now identifiable in the app list & searchable with the word `New!`.
+        - The newly installed status will last 48 hours for each new app.
+    - Double tap to sleep.
+        - Available to device with Android 9 & later version.
 
 - Changes:
     - Docked apps no longer being suggested in the app suggestions.
         - You can revert this behavior in the settings.
+    - Setting page reorganized and unified wordings.
 
 ### Version 1.9-fix2 (2024-01-21)
 - Bug Fixes:
