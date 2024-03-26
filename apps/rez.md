@@ -3,15 +3,14 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-03-17
+date: 2024-03-26
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
 ## Development Status
 
-**Due to I'm getting a new job, development will be slow down.**
-*(I am not abandoning it, just won't have as much time as before to work on it.)*
+[**Latest project update**]({% post_url 2024-03-26-ReZ-Launcher-beta %})
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
@@ -67,15 +66,18 @@ date: 2024-03-17
 - New Features:
     - Newly installed apps are now identifiable in the app list & searchable with the word `New!`.
         - The newly installed status will last 48 hours for each new app.
-    - Double tap to sleep.
-        - Available to device with Android 9 & later version.
+    - Double tap to sleep (available to Android 9 & later devices.)
 
 - Changes:
     - Docked apps no longer being suggested in the app suggestions.
         - You can revert this behavior in the settings.
     - Setting page reorganized and unified wordings.
 
+- Bug Fixes:
+    - Incorrect button icon size & color on notification cards.
+
 ### Version 1.9-fix2 (2024-01-21)
+
 - Bug Fixes:
     - Fixed an issue where toggling work apps can crash the launcher.
 
