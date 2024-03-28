@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ReZ Launcher | perryOnCrack’s Devlog &amp; Photos</title>
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="ReZ Launcher">
+<meta name="author" content="perryOnCrack">
+<meta property="og:locale" content="en">
+<meta name="description" content="perryOnCrack’s personal website Devlog Photo Portfolio">
+<meta property="og:description" content="perryOnCrack’s personal website Devlog Photo Portfolio">
+<link rel="canonical" href="https://www.perryoncrack.me/apps/rez">
+<meta property="og:url" content="https://www.perryoncrack.me/apps/rez">
+<meta property="og:site_name" content="perryOnCrack’s Devlog &amp; Photos">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-03-26T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="ReZ Launcher">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"perryOnCrack"},"dateModified":"2024-03-26T00:00:00+00:00","datePublished":"2024-03-26T00:00:00+00:00","description":"perryOnCrack’s personal website Devlog Photo Portfolio","headline":"ReZ Launcher","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.perryoncrack.me/apps/rez"},"url":"https://www.perryoncrack.me/apps/rez"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://www.perryoncrack.me/feed.xml" title="perryOnCrack's Devlog &amp; Photos">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="perryOnCrack's Devlog &amp; Photos" src="" onerror="this.style.display='none'">
+  perryOnCrack's Devlog &amp; Photos
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/photos/">PHOTOS</a><a class="page-link" href="/projects/">PROJECTS</a><a class="page-link" href="/about/">ABOUT</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">ReZ Launcher</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2024-03-26T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-03-26
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 8 mins</span>
+  </p></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p><a href="https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="/assets/images/projects/rez-banner-trans-back.png" alt="Get it on Google Play" height="120"></a></p>
+
+<h2 id="development-status">Development Status</h2>
+
+<p><a href="/devlog/2024/03/26/ReZ-Launcher-beta.html"><strong>Latest project update</strong></a></p>
+
+<p><strong>If you have any suggestions, you can contact me through my contact infos in the <a href="/about">about</a> page.</strong></p>
+
+<h3 id="in-development">In Development</h3>
+
+<ul>
+  <li>Newly installed apps</li>
+  <li>Hide docked Apps from suggestion</li>
+  <li>Variable scribble stroke width (like the original Z Launcher)</li>
+  <li>Double tap to lock screen</li>
+</ul>
+
+<h3 id="planned-features">Planned features</h3>
+
+<ul>
+  <li>On-coming calendar events on top panel</li>
+  <li>More notification style in app info menu</li>
+  <li>App list scrollbar (waiting for the official Jetpack Compose implementation)</li>
+  <li>Huge rewrite/refactor of the widget space (it’s rotten spaghetti in there)</li>
+  <li>Other launcher language support</li>
+</ul>
+
+<h3 id="user-suggested-features--improvements-might-not-be-implemented-ever">User Suggested Features &amp; Improvements (might not be implemented ever)</h3>
+
+<ul>
+  <li>Pinned shortcut/PWA</li>
+  <li>Customizable font &amp; font size</li>
+  <li>App list grid view (it will break the current UI pattern, some stuff will have to change before it’s possible to be implemented.)</li>
+</ul>
+
+<h3 id="some-ideas-of-mine-might-not-be-implemented-ever-as-well">Some ideas of mine (might not be implemented ever as well)</h3>
+
+<ul>
+  <li>Adjustment to the recommendation algorithm.</li>
+  <li>Foldable device screen layout</li>
+  <li>The transition flip animation from the original Z Launcher</li>
+  <li>ML-based suggestion algorithm</li>
+  <li>Fully customizable UI color</li>
+  <li>General code refactoring</li>
+  <li>Experimental features to address some gesture navigation issues</li>
+</ul>
+
+<h3 id="wont-implement">Won’t implement</h3>
+
+<ul>
+  <li>Web search</li>
+  <li>Device file search</li>
+  <li>Google Now page</li>
+</ul>
+
+<h3 id="known-issues">Known issues</h3>
+
+<ul>
+  <li>Unable to use Samsung OneUI’s gesture navigation
+    <ul>
+      <li>Update on this issue: It can be reproduced on my friend’s phone but can’t through Samsung’s remote test lab. Maybe it only appears in some OneUI versions?</li>
+    </ul>
+  </li>
+  <li>Crash when moving or resizing widgets on some devices</li>
+</ul>
+
+<hr>
+
+<h2 id="changelogs">Changelogs</h2>
+
+<h3 id="version-110-upcoming-maybe-in-a-few-months-idk-subject-to-change">Version 1.10 (Upcoming, maybe in a few months idk. Subject to change)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Newly installed apps are now identifiable in the app list &amp; searchable with the word <code class="language-plaintext highlighter-rouge">New!</code>.
+        <ul>
+          <li>The newly installed status will last 48 hours for each new app.</li>
+        </ul>
+      </li>
+      <li>Double tap to sleep (available to Android 9 &amp; later devices.)</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Docked apps no longer being suggested in the app suggestions.
+        <ul>
+          <li>You can revert this behavior in the settings.</li>
+        </ul>
+      </li>
+      <li>Setting page reorganized and unified wordings.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Incorrect button icon size &amp; color on notification cards.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-fix2-2024-01-21">Version 1.9-fix2 (2024-01-21)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where toggling work apps can crash the launcher.</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">Enable Widget Area</code> &amp; <code class="language-plaintext highlighter-rouge">Notification Dot Display Order</code> can be accessed in Customization menu now.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-fix1-2024-01-11">Version 1.9-fix1 (2024-01-11)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some app shortcuts can crash the launcher.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-2024-01-09">Version 1.9 (2024-01-09)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Updated Scribble settings:
+        <ul>
+          <li>Added all of the ML Kit supported languages.</li>
+          <li>Rearranging language precedence is now done by drag &amp; drop.</li>
+          <li>Added proper install status and the ability to re-download on the spot.</li>
+        </ul>
+      </li>
+      <li>Option to hide status bar in home screen. (Access it in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Customization</code> -&gt; <code class="language-plaintext highlighter-rouge">Status Bar</code>)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes/Workarounds:
+    <ul>
+      <li>Disabled language delete button while downloading &amp; deleting to avoid getting ghost installs.</li>
+      <li>Fixed an issue where some notifications can crash the launcher.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-181-fix1-2023-12-31">Version 1.8.1-fix1 (2023-12-31)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Re-added SET_ALARM permission because some device manufactures’ clock apps need it to view alarms.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-181-2023-12-28">Version 1.8.1 (2023-12-28)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Notification dot color is now customizable.</li>
+      <li>Clicking the date of home screen clock now opens the calendar.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed some UI elements using the incorrect color &amp; size.</li>
+      <li>Removed unnecessary permissions.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-18-fix1-2023-12-22">Version 1.8-fix1 (2023-12-22)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some Android 14 devices can’t add widgets that require configuration.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-18-2023-12-21">Version 1.8 (2023-12-21)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Work profile support:
+        <ul>
+          <li>Supported features:
+            <ul>
+              <li>Work apps: Show in app list, suggestions &amp; search, hidden when work profile is paused.</li>
+              <li>Work app widgets: Show in widget list, hidden when work profile is paused.</li>
+              <li>Notification dot for work apps</li>
+            </ul>
+          </li>
+          <li>Unsupported features (due to API constraints):
+            <ul>
+              <li>Media control for work apps</li>
+              <li>Contact search for work profile contacts</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Customization Options: (Access them in <code class="language-plaintext highlighter-rouge">Settings -&gt; Customizations</code>)
+        <ul>
+          <li>Icon pack support</li>
+          <li>UI color adjustment</li>
+          <li>Smaller icon size options</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Wallpaper option in Settings has been moved into Customizations menu.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Various stability fixes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-17-2023-12-11">Version 1.7 (2023-12-11):</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Contact search:
+        <ul>
+          <li>You can access its settings under <code class="language-plaintext highlighter-rouge">Settings -&gt; Contact Search</code>.</li>
+        </ul>
+      </li>
+      <li>App &amp; contact alias:
+        <ul>
+          <li>You can access it in apps/contacts’ info menu(long press menu).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Scribble search now queries against words in app/contact’s name.</li>
+      <li>Updated user manual, now with GIFs! <em>(They are animated webp actually.)</em>
+</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where scribble with pointer devices other than touch causing unexpected behaviors and crashing.</li>
+      <li>Various stability fixes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix3-2023-11-21">Version 1.6-fix3 (2023-11-21):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed an issue where notification dot will crash the launcher in some condition.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix2-2023-11-19">Version 1.6-fix2 (2023-11-19):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed various app crashing problems (hopefully), these include:
+        <ul>
+          <li>Crash when widget list failed to fetch app names.</li>
+          <li>Crash when failed to launch an app or its app info’s activity.</li>
+          <li>Crash when using the app visibility button popup.</li>
+          <li>Crash when opening up this launcher.</li>
+        </ul>
+      </li>
+      <li>Fixed launching app shortcut didn’t get counted to usage.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix1-2023-11-16">Version 1.6-fix1 (2023-11-16):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed app info menu not closing after opening an app shortcut.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-2023-11-06">Version 1.6 (2023-11-06)</h3>
+
+<ul>
+  <li>New Features
+    <ul>
+      <li>Widget support:
+        <ul>
+          <li>Swipe to the left or right in Home Screen to access the new widget space.</li>
+          <li>You can access widget related settings under <code class="language-plaintext highlighter-rouge">Settings -&gt; Widget</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Bug Fixes
+    <ul>
+      <li>App List now fills up the screen properly on wide screen devices.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-15-fix1-2023-10-20">Version 1.5-fix1 (2023-10-20)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some notifications can crash the launcher.</li>
+      <li>Fixed faulty home button detection implementation.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-15-2023-10-17">Version 1.5 (2023-10-17)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Media Control in the top panel. (Enable this feature in <code class="language-plaintext highlighter-rouge">Settings -&gt; Media Control</code>)</li>
+      <li>More fine-grained app hiding, see <code class="language-plaintext highlighter-rouge">Settings -&gt; User Manual -&gt; Hiding App</code> for more detail.</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Quick Launch area will now show an arrow when it’s empty.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where notification dot not being updated properly.</li>
+    </ul>
+  </li>
+  <li>New Bugs:
+    <ul>
+      <li>In the top panel, right after swiping, clicks will sometimes only response after a few more clicks.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-14-2023-09-27">Version 1.4 (2023-09-27)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Update changelog dialog</li>
+      <li>Notification dot &amp; app notification in app info menu (Enable them in “Settings” -&gt; “Notification Dot”)</li>
+      <li>Hiding apps from suggestions</li>
+      <li>Improved onboarding experience</li>
+      <li>Added Korean handwriting support</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Quick Launch Area’s icons will now adjust their position base on the icon amount.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-13-2023-09-16">Version 1.3 (2023-09-16)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Analog clock.</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Handwriting should be more responsive on mid-end &amp; low-end devices.</li>
+      <li>More adaptive screen layout, UI elements won’t get covered on shorter screen anymore.</li>
+      <li>Backend algorithm improvement, app searching should be much faster and less resource intensive.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-12-fix1-2023-08-12">Version 1.2-fix1 (2023-08-12)</h3>
+
+<ul>
+  <li>Fixed a usage collection issue.</li>
+</ul>
+
+<h3 id="version-12-2023-08-11">Version 1.2 (2023-08-11)</h3>
+
+<ul>
+  <li>Rewrote suggestion algorithm.</li>
+  <li>Redesigned app info menu.</li>
+  <li>Added access to app shortcuts.</li>
+  <li>Thicken the font for better visibility.</li>
+  <li>Fixed navigation, status bar and other icons not display correctly when system is using light mode.</li>
+</ul>
+
+<h3 id="version-11-fix1-2023-08-06">Version 1.1-fix1 (2023-08-06)</h3>
+
+<ul>
+  <li>Fixing the crashing issue.</li>
+</ul>
+
+<h3 id="version-11-2023-07-29">Version 1.1 (2023-07-29)</h3>
+
+<ul>
+  <li>Fixed some layout issues.</li>
+  <li>Attempted to fix the crashing issue.</li>
+</ul>
+
+<h3 id="version-10-2023-07-14">Version 1.0 (2023-07-14)</h3>
+
+<ul>
+  <li>Initial release.</li>
+</ul>
+
+<hr>
+
+<ul>
+  <li><a href="/legal/rez/privacy.html">Privacy Policy</a></li>
+  <li><a href="/legal/rez/terms.html">Terms &amp; Conditions</a></li>
+</ul>
+
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+<script type="text/javascript">kofiwidget2.init('Support Development', '#29abe0', 'R6R6RZZ2S');kofiwidget2.draw();</script>
+
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<span></span><span></span>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        </ul>
+    </div>
+<div class="post-comments">  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://www.perryoncrack.me/apps/rez';
+      this.page.identifier = 'https://www.perryoncrack.me/apps/rez';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://perryoncrack-main.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+</div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Copyright © 2020-2024 perryOnCrack</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
