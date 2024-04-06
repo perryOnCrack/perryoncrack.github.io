@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-03-26
+date: 2024-04-06
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,12 +14,16 @@ date: 2024-03-26
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In Development
+### In beta now
 
 - Newly installed apps
-- Hide docked Apps from suggestion
-- Variable scribble stroke width (like the original Z Launcher)
 - Double tap to lock screen
+- Hide docked Apps from suggestion
+- Fix for crashing when moving or resizing widgets
+
+### In Development
+
+- Variable scribble stroke width (like the original Z Launcher)
 
 ### Planned features
 
@@ -28,16 +32,18 @@ date: 2024-03-26
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
+- Launcher log collection when sending feedback
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
 - Pinned shortcut/PWA
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
+- Hide all suggestions for more minimalistic look
 
 ### Some ideas of mine (might not be implemented ever as well)
 
-- Adjustment to the recommendation algorithm.
+- Adjustment to the suggestion algorithm.
 - Foldable device screen layout
 - The transition flip animation from the original Z Launcher
 - ML-based suggestion algorithm
@@ -50,12 +56,18 @@ date: 2024-03-26
 - Web search
 - Device file search
 - Google Now page
+- Typing search
 
 ### Known issues
 
 - Unable to use Samsung OneUI's gesture navigation
-    - Update on this issue: It can be reproduced on my friend's phone but can't through Samsung's remote test lab. Maybe it only appears in some OneUI versions?
+    - On my friend's device it can be replicated, but can't through Samsung's remote test lab. Maybe it's on some OneUI versions only?
+- Unable to use Xiaomi/POCO's gesture navigation
+    - This is cause by Xiaomi's anti-consumer practice, there's nothing I can do about it.
 - Crash when moving or resizing widgets on some devices
+- Some touch won't register after swiping on pages.
+    - This is cause by Compose's pager implementation, and is fixed in the upstream.
+    - This issue will be fixed in version 1.10.
 
 ---
 
@@ -68,13 +80,22 @@ date: 2024-03-26
         - The newly installed status will last 48 hours for each new app.
     - Double tap to sleep (available to Android 9 & later devices.)
 
+- Bug Fixes:
+    - Fixed an issue where some widgets will crash the launcher when trying to resize them.
+    - Incorrect button icon size & color on notification cards.
+
 - Changes:
-    - Docked apps no longer being suggested in the app suggestions.
-        - You can revert this behavior in the settings.
+    - Apps & contacts in the Quick Launch will no longer being suggested.
+    - Added shadow to widget delete button for better visibility.
     - Setting page reorganized and unified wordings.
 
+### Version 1.9-fix3 (2024-04-06)
+
 - Bug Fixes:
-    - Incorrect button icon size & color on notification cards.
+    - Fixed an issue where some widgets will crash the launcher when trying to resize them.
+
+- Changes:
+    - Added shadow to widget delete button for better visibility.
 
 ### Version 1.9-fix2 (2024-01-21)
 
