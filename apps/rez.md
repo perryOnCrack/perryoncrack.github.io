@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-04-06
+date: 2024-04-20
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -18,11 +18,12 @@ date: 2024-04-06
 
 - Newly installed apps
 - Double tap to lock screen
-- Hide docked Apps from suggestion
-- Fix for crashing when moving or resizing widgets
+- Hide quick launch apps/contact from suggestion
+- Fix for crashing when trying to move or resize widgets
 
 ### In Development
 
+- Setting page reorganized
 - Variable scribble stroke width (like the original Z Launcher)
 
 ### Planned features
@@ -40,16 +41,18 @@ date: 2024-04-06
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 - Hide all suggestions for more minimalistic look
+- Scrollable widget page
+- Weather on top panel
 
 ### Some ideas of mine (might not be implemented ever as well)
 
-- Adjustment to the suggestion algorithm.
+- Adjustment to the suggestion algorithm
+    - Maybe made a ML-based algorithm?
 - Foldable device screen layout
 - The transition flip animation from the original Z Launcher
-- ML-based suggestion algorithm
+- Other transition animations
 - Fully customizable UI color
 - General code refactoring
-- Experimental features to address some gesture navigation issues
 
 ### Won't implement
 
@@ -60,14 +63,18 @@ date: 2024-04-06
 
 ### Known issues
 
-- Unable to use Samsung OneUI's gesture navigation
-    - On my friend's device it can be replicated, but can't through Samsung's remote test lab. Maybe it's on some OneUI versions only?
-- Unable to use Xiaomi/POCO's gesture navigation
-    - This is cause by Xiaomi's anti-consumer practice, there's nothing I can do about it.
+- Unable to use gesture navigation in some brand's customized OS.
+
+    | Brand         | Issue status                                                                                                                        |
+    | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+    | Samsung OneUI | It can be replicated in my friend's device, but can't in Samsung's remote test lab. Maybe it only happens on some version of OneUI? |
+    | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. I can't fix it even if I want.                                                           |
+
 - Crash when moving or resizing widgets on some devices
 - Some touch won't register after swiping on pages.
     - This is cause by Compose's pager implementation, and is fixed in the upstream.
     - This issue will be fixed in version 1.10.
+- Some device can't retrieve contact list properly and renders contact search usable.
 
 ---
 
@@ -86,8 +93,10 @@ date: 2024-04-06
 
 - Changes:
     - Apps & contacts in the Quick Launch will no longer being suggested.
+        - They will still be shown when scribble searching.
     - Added shadow to widget delete button for better visibility.
-    - Setting page reorganized and unified wordings.
+    - Setting page reorganized and wording adjusted.
+    - UI visual adjustment.
 
 ### Version 1.9-fix3 (2024-04-06)
 
