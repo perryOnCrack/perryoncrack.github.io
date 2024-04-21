@@ -14,7 +14,7 @@ date: 2024-04-21
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In beta now
+### In Beta
 
 - Newly installed apps
 - Double tap to lock screen
