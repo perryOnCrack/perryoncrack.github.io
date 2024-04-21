@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-04-20
+date: 2024-04-21
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -20,10 +20,10 @@ date: 2024-04-20
 - Double tap to lock screen
 - Hide quick launch apps/contact from suggestion
 - Fix for crashing when trying to move or resize widgets
+- Setting page reorganized
 
 ### In Development
 
-- Setting page reorganized
 - Variable scribble stroke width (like the original Z Launcher)
 
 ### Planned features
@@ -47,7 +47,7 @@ date: 2024-04-20
 ### Some ideas of mine (might not be implemented ever as well)
 
 - Adjustment to the suggestion algorithm
-    - Maybe made a ML-based algorithm?
+    - Maybe ML-based algorithm?
 - Foldable device screen layout
 - The transition flip animation from the original Z Launcher
 - Other transition animations
@@ -90,10 +90,12 @@ date: 2024-04-20
 - Bug Fixes:
     - Fixed an issue where some widgets will crash the launcher when trying to resize them.
     - Incorrect button icon size & color on notification cards.
+    - (Workaround) Some background crashing issue.
+    - Clicks should be registered correctly after swiping on pages.
 
 - Changes:
     - Apps & contacts in the Quick Launch will no longer being suggested.
-        - They will still be shown when scribble searching.
+        - They will still show up in scribble search results.
     - Added shadow to widget delete button for better visibility.
     - Setting page reorganized and wording adjusted.
     - UI visual adjustment.
