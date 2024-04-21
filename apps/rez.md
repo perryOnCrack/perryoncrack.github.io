@@ -74,7 +74,7 @@ date: 2024-04-21
 - Some touch won't register after swiping on pages.
     - This is cause by Compose's pager implementation, and is fixed in the upstream.
     - This issue will be fixed in version 1.10.
-- Some device can't retrieve contact list properly and renders contact search usable.
+- Some device can't retrieve contact list properly and renders contact search unusable.
 
 ---
 
