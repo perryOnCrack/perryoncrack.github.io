@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-04-21
+date: 2024-04-27
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -52,6 +52,7 @@ date: 2024-04-21
 - The transition flip animation from the original Z Launcher
 - Other transition animations
 - Fully customizable UI color
+- Predictive Back API support
 - General code refactoring
 
 ### Won't implement
@@ -90,8 +91,10 @@ date: 2024-04-21
 - Bug Fixes:
     - Fixed an issue where some widgets will crash the launcher when trying to resize them.
     - Incorrect button icon size & color on notification cards.
-    - (Workaround) Some background crashing issue.
-    - Clicks should be registered correctly after swiping on pages.
+    - Workaround on a background crashing issue.
+    - Clicks can be registered correctly after swiping on pages.
+    - Fixed animation issue with query text switching.
+    - Fixed a issue where in some cases scribble can lead to crash.
 
 - Changes:
     - Apps & contacts in the Quick Launch will no longer being suggested.
