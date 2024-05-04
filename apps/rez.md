@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-04-27
+date: 2024-05-04
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,23 +14,12 @@ date: 2024-04-27
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In Beta
-
-- Newly installed apps
-- Double tap to lock screen
-- Hide quick launch apps/contact from suggestion
-- Fix for crashing when trying to move or resize widgets
-- Setting page reorganized
-
-### In Development
-
-- Variable scribble stroke width (like the original Z Launcher)
-
 ### Planned features
 
 - On-coming calendar events on top panel
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
+- Variable scribble stroke width (like the original Z Launcher)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
 - Launcher log collection when sending feedback
@@ -71,37 +60,36 @@ date: 2024-04-27
     | Samsung OneUI | It can be replicated in my friend's device, but can't in Samsung's remote test lab. Maybe it only happens on some version of OneUI? |
     | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. I can't fix it even if I want.                                                           |
 
-- Crash when moving or resizing widgets on some devices
-- Some touch won't register after swiping on pages.
-    - This is cause by Compose's pager implementation, and is fixed in the upstream.
-    - This issue will be fixed in version 1.10.
-- Some device can't retrieve contact list properly and renders contact search unusable.
+- Crash when moving or resizing widgets on some devices.
+    - A major cause of this issue has been fixed in 1.9-fix3, but I'm still getting some report of it happening, maybe there's still other causes.
+- Contact list can't be retrieved properly in some devices and renders contact search unusable.
 
 ---
 
 ## Changelogs
 
-### Version 1.10 (Upcoming, maybe in a few months idk. Subject to change)
+### Version 1.10 (2024-05-04)
 
 - New Features:
-    - Newly installed apps are now identifiable in the app list & searchable with the word `New!`.
+    - Double tap to sleep
+        - Access it in `Settings` -> `Feature Settings` -> `Gesture`.
+        - Available to Android 9 & later devices.
+    - Newly installed apps will now be shown in the app list & searchable with the word `New!`.
         - The newly installed status will last 48 hours for each new app.
-    - Double tap to sleep (available to Android 9 & later devices.)
-
-- Bug Fixes:
-    - Fixed an issue where some widgets will crash the launcher when trying to resize them.
-    - Incorrect button icon size & color on notification cards.
-    - Workaround on a background crashing issue.
-    - Clicks can be registered correctly after swiping on pages.
-    - Fixed animation issue with query text switching.
-    - Fixed a issue where in some cases scribble can lead to crash.
 
 - Changes:
     - Apps & contacts in the Quick Launch will no longer being suggested.
         - They will still show up in scribble search results.
     - Added shadow to widget delete button for better visibility.
-    - Setting page reorganized and wording adjusted.
-    - UI visual adjustment.
+    - Setting pages reorganized and wording adjusted.
+    - Various UI visual adjustments.
+
+- Bug Fixes:
+    - Fixed incorrect icon size & color on notification cards.
+    - Workaround on a background crashing issue.
+    - Clicks after swiping on pages are now registered correctly.
+    - Fixed an issue where click on a scribble candidate reset its scrolling.
+    - Fixed an issue where sometimes scribble can crash the launcher.
 
 ### Version 1.9-fix3 (2024-04-06)
 
