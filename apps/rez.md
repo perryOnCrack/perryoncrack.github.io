@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-05-04
+date: 2024-05-11
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -67,6 +67,11 @@ date: 2024-05-04
 ---
 
 ## Changelogs
+
+### Version 1.10-fix1 (2024-05-11)
+
+- Bug Fixes:
+    - Fixed a crash issue caused by Compose.
 
 ### Version 1.10 (2024-05-04)
 
