@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-05-11
+date: 2024-05-12
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,15 +14,20 @@ date: 2024-05-11
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
+### In Development
+
+- Home screen item filling option.
+- Better feedback system.
+- Transition flip animation from the original Z Launcher
+- On-coming calendar events on top panel
+
 ### Planned features
 
-- On-coming calendar events on top panel
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Variable scribble stroke width (like the original Z Launcher)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
-- Launcher log collection when sending feedback
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
@@ -38,7 +43,6 @@ date: 2024-05-11
 - Adjustment to the suggestion algorithm
     - Maybe ML-based algorithm?
 - Foldable device screen layout
-- The transition flip animation from the original Z Launcher
 - Other transition animations
 - Fully customizable UI color
 - Predictive Back API support
@@ -62,7 +66,11 @@ date: 2024-05-11
 
 - Crash when moving or resizing widgets on some devices.
     - A major cause of this issue has been fixed in 1.9-fix3, but I'm still getting some report of it happening, maybe there's still other causes.
+
 - Contact list can't be retrieved properly in some devices and renders contact search unusable.
+
+- Bottom sheets have incorrect insets on older API devices.
+    - Affected API: 26
 
 ---
 
