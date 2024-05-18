@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-05-12
+date: 2024-05-19
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -72,9 +72,16 @@ date: 2024-05-12
 - Bottom sheets have incorrect insets on older API devices.
     - Affected API: 26
 
+- Widget delete button is out of bound when the widget is filling the whole screen.
+
 ---
 
 ## Changelogs
+
+### Version 1.10-fix2 (2024-05-19)
+
+- Bug Fixes:
+    - Fixed a wrong calculation for widget's maximum size.
 
 ### Version 1.10-fix1 (2024-05-11)
 
