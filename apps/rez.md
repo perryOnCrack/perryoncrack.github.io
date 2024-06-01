@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-05-19
+date: 2024-06-01
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -16,6 +16,7 @@ date: 2024-05-19
 
 ### In Development
 
+- PWA support. *(And... maybe pinned shortcut too.)*
 - Home screen item filling option.
 - Better feedback system.
 - Transition flip animation from the original Z Launcher
@@ -31,7 +32,6 @@ date: 2024-05-19
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
-- Pinned shortcut/PWA
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 - Hide all suggestions for more minimalistic look
