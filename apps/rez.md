@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-06-01
+date: 2024-06-02
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -13,6 +13,11 @@ date: 2024-06-01
 [**Latest project update**]({% post_url 2024-03-26-ReZ-Launcher-beta %})
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
+
+### In Beta
+
+- PWA support. (WebAPK only)
+- Customizable Home Screen item count. (Half-baked implementation, subject to change.)
 
 ### In Development
 
@@ -53,7 +58,7 @@ date: 2024-06-01
 - Web search
 - Device file search
 - Google Now page
-- Typing search
+- Typing search/search bar (kinda defeat the point of scribble search)
 
 ### Known issues
 
@@ -77,6 +82,12 @@ date: 2024-06-01
 ---
 
 ## Changelogs
+
+### Version 1.11 (In development)
+
+- New Features
+    - Progressive web app and shortcut pinning support.
+    - More Home Screen customization.
 
 ### Version 1.10-fix2 (2024-05-19)
 
