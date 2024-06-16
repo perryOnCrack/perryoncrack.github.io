@@ -14,7 +14,7 @@ date: 2024-06-16
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In Beta
+### In Beta (1.11-beta2)
 
 - PWA support. (WebAPK only)
 - Customize suggestion item amount.
