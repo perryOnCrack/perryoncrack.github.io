@@ -145,6 +145,7 @@ night_mode: "manual"
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+  - apps/rez.md
   - photos.md
   - projects.md
   - about.md

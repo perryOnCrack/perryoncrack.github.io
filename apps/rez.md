@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-06-10
+date: 2024-06-16
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -17,13 +17,18 @@ date: 2024-06-10
 ### In Beta
 
 - PWA support. (WebAPK only)
-- Customizable Home Screen item count. (Half-baked implementation, subject to change.)
+- Customize suggestion item amount.
+- Hide all app suggestions.
+- UI animations from the original Z Launcher.
+- Improve scribble behavior.
+    - Now it mimics the original Z Launcher, should be more responsive than before.
+    - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
+- Bottom sheet UI fixes.
 
 ### In Development
 
 - Transition flip animation from the original Z Launcher
 - PWA support. *(And... maybe pinned shortcut too.)*
-- Home screen item filling option.
 - Better feedback system.
 - On-coming calendar events on top panel
 
@@ -74,8 +79,8 @@ date: 2024-06-10
 
 - Contact list can't be retrieved properly in some devices and renders contact search unusable.
 
-- Bottom sheets have incorrect insets on older API devices.
-    - Affected API: 26
+- When opening bottom sheet UIs, in some condition, the status bar will have incorrect color.
+    - This is caused by the current Compose ModalBottomSheet implementation, I don't have a fix at the moment.
 
 - Widget delete button is out of bound when the widget is filling the whole screen.
 
@@ -88,10 +93,17 @@ date: 2024-06-10
 - New Features:
     - Progressive web app and shortcut pinning support.
     - More Home Screen customization.
+        - Change suggestion item amount.
+        - Hide all app suggestions.
 
 - Changes:
-    - New UI transition animations from the original Z Launcher.
-    - More responsive scribble.
+    - UI animations from the original Z Launcher.
+    - Improve scribble behavior.
+        - Now it mimics the original Z Launcher, should be more responsive than before.
+        - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
+
+- Bug Fixes:
+    - Incorrect bottom sheet window insets in older Android versions.
 
 ### Version 1.10-fix2 (2024-05-19)
 
