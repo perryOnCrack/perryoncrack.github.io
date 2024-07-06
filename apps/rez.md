@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-06-16
+date: 2024-07-06
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,16 +14,20 @@ date: 2024-06-16
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In Beta (1.11-beta2)
+### In Beta (1.11-beta3)
 
 - PWA support. (WebAPK only)
 - Customize suggestion item amount.
 - Hide all app suggestions.
-- UI animations from the original Z Launcher.
+- Customize UI animations, available animations:
+    - Classic Z Launcher
+    - Original crossfade
+    - No animation
 - Improve scribble behavior.
     - Now it mimics the original Z Launcher, should be more responsive than before.
     - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
 - Bottom sheet UI fixes.
+- Unified & updated all dialog styling.
 
 ### In Development
 
@@ -91,16 +95,23 @@ date: 2024-06-16
 ### Version 1.11 (In development)
 
 - New Features:
-    - Progressive web app and shortcut pinning support.
+    - Progressive web app support *(WebApk for the moment.)*
     - More Home Screen customization.
         - Change suggestion item amount.
         - Hide all app suggestions.
+    - Customize UI animations.
+        - Access it in `Setting` -> `Customizations` -> `Animations`.
+        - Available animations:
+            - Classic Z Launcher
+            - Original crossfade
+            - No animation
 
 - Changes:
-    - UI animations from the original Z Launcher.
     - Improve scribble behavior.
         - Now it mimics the original Z Launcher, should be more responsive than before.
         - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
+    - Unified & updated all dialog styling.
+    - Background improvements.
 
 - Bug Fixes:
     - Incorrect bottom sheet window insets in older Android versions.
