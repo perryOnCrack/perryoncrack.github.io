@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-07-06
+date: 2024-07-07
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -31,13 +31,12 @@ date: 2024-07-06
 
 ### In Development
 
-- Transition flip animation from the original Z Launcher
-- PWA support. *(And... maybe pinned shortcut too.)*
-- Better feedback system.
 - On-coming calendar events on top panel
+- Better feedback system.
 
 ### Planned features
 
+- Pinned shortcut
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Variable scribble stroke width (like the original Z Launcher)
@@ -48,7 +47,6 @@ date: 2024-07-06
 
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
-- Hide all suggestions for more minimalistic look
 - Scrollable widget page
 - Weather on top panel
 
@@ -60,6 +58,9 @@ date: 2024-07-06
 - Other transition animations
 - Fully customizable UI color
 - Predictive Back API support
+
+### Always be doing
+
 - General code refactoring
 
 ### Won't implement
@@ -79,7 +80,7 @@ date: 2024-07-06
     | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. I can't fix it even if I want.                                                           |
 
 - Crash when moving or resizing widgets on some devices.
-    - A major cause of this issue has been fixed in 1.9-fix3, but I'm still getting some report of it happening, maybe there's still other causes.
+    - A major cause of this issue has been fixed in `1.9-fix3`, but I'm still getting some report of it happening, maybe there's still other causes.
 
 - Contact list can't be retrieved properly in some devices and renders contact search unusable.
 
@@ -105,6 +106,7 @@ date: 2024-07-06
             - Classic Z Launcher
             - Original crossfade
             - No animation
+    - Drag up to open app list gesture.
 
 - Changes:
     - Improve scribble behavior.
