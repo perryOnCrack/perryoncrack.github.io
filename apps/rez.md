@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-07-07
+date: 2024-07-21
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -31,8 +31,10 @@ date: 2024-07-07
 
 ### In Development
 
-- On-coming calendar events on top panel
-- Better feedback system.
+**1.11-beta4 won't come out for another few weeks, need more time polishing the calendar feature**
+
+- On-coming calendar events on top panel (A bit more complicated than I expected)
+- Better feedback system
 
 ### Planned features
 
@@ -93,7 +95,7 @@ date: 2024-07-07
 
 ## Changelogs
 
-### Version 1.11 (In development)
+### Version 1.11 (In development hell)
 
 - New Features:
     - Progressive web app support *(WebApk for the moment.)*
