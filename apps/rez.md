@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-07-21
+date: 2024-07-28
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,30 +14,26 @@ date: 2024-07-21
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
-### In Beta (1.11-beta3)
+### In Beta (1.11-beta4)
 
-- PWA support. (WebAPK only)
-- Customize suggestion item amount.
-- Hide all app suggestions.
-- Customize UI animations, available animations:
-    - Classic Z Launcher
-    - Original crossfade
-    - No animation
-- Improve scribble behavior.
-    - Now it mimics the original Z Launcher, should be more responsive than before.
-    - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
-- Bottom sheet UI fixes.
-- Unified & updated all dialog styling.
+- PWA support (WebAPK only)
+- Customize suggestion item amount
+- Hide all app suggestions
+- UI animation customization
+- Improve scribble behavior
+- Upcoming calendar events in top panel
+- Customize top panel content order
+- New gesture: Drag up to open app list
+- Unified & updated all dialog styling
+- Bottom sheet UI fixes
 
 ### In Development
 
-**1.11-beta4 won't come out for another few weeks, need more time polishing the calendar feature**
-
-- On-coming calendar events on top panel (A bit more complicated than I expected)
-- Better feedback system
+- Upcoming calendar events on top panel *(This is a bit more complicated than I expected)*
 
 ### Planned features
 
+- Better feedback system
 - Pinned shortcut
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
@@ -98,22 +94,22 @@ date: 2024-07-21
 ### Version 1.11 (In development hell)
 
 - New Features:
-    - Progressive web app support *(WebApk for the moment.)*
-    - More Home Screen customization.
-        - Change suggestion item amount.
-        - Hide all app suggestions.
-    - Customize UI animations.
-        - Access it in `Setting` -> `Customizations` -> `Animations`.
-        - Available animations:
-            - Classic Z Launcher
-            - Original crossfade
-            - No animation
-    - Drag up to open app list gesture.
+    - Progressive web app support *(WebApk only)*
+    - Upcoming calendar event in top panel
+        - Access in `Settings` -> `Feature Settings` -> `Calendar Event`
+    - UI animation customization
+        - Access it in `Settings` -> `Customizations` -> `Animations`
+        - Available animations: `Classic Z Launcher`, `Crossfade` & `No animation`
+    - More customization options
+        - Home screen suggestion amount
+        - Hide all suggestions
+        - Top panel content display order
+    - New gesture: Drag up to open app list
 
 - Changes:
-    - Improve scribble behavior.
-        - Now it mimics the original Z Launcher, should be more responsive than before.
-        - Scribble gestures(backspace & space) now have to be completed in 230ms to be recognized.
+    - Improve scribble behavior
+        - It now mimics the original Z Launcher's behavior, should be more responsive than before.
+        - Scribble gestures (backspace & space) now have a 230ms timeout.
     - Unified & updated all dialog styling.
     - Background improvements.
 
