@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-08-11
+date: 2024-08-25
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -13,23 +13,6 @@ date: 2024-08-11
 [**Latest project update**]({% post_url 2024-03-26-ReZ-Launcher-beta %})
 
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
-
-### In Beta (1.11-beta4)
-
-- PWA support (WebAPK only)
-- Customize suggestion item amount
-- Hide all app suggestions
-- UI animation customization
-- Improve scribble behavior
-- Upcoming calendar events in top panel
-- Customize top panel content order
-- New gesture: Drag up to open app list
-- Unified & updated all dialog styling
-- Bottom sheet UI fixes
-
-### In Development
-
-- Upcoming calendar events on top panel *(This is a bit more complicated than I expected)*
 
 ### Planned features
 
@@ -93,30 +76,31 @@ date: 2024-08-11
 
 ## Changelogs
 
-### Version 1.11 (In development hell)
+### Version 1.11 (2024-08-25)
 
 - New Features:
     - Progressive web app support *(WebApk only)*
-    - Upcoming calendar event in top panel
+    - Upcoming calendar event
         - Access in `Settings` -> `Feature Settings` -> `Calendar Event`
+        - Work profile calendar support will be added in later update.
     - UI animation customization
         - Access it in `Settings` -> `Customizations` -> `Animations`
         - Available animations: `Classic Z Launcher`, `Crossfade` & `No animation`
     - More customization options
-        - Home screen suggestion amount
-        - Hide all suggestions
+        - App/contact suggestion amount
+        - Hide all suggestion
         - Top panel content display order
     - New gesture: Drag up to open app list
 
 - Changes:
     - Improve scribble behavior
-        - It now mimics the original Z Launcher's behavior, should be more responsive than before.
+        - It now mimics the original Z Launcher's behavior, should be more responsive and allowing faster input.
         - Scribble gestures (backspace & space) now have a 230ms timeout.
     - Unified & updated all dialog styling.
     - Background improvements.
 
 - Bug Fixes:
-    - Incorrect bottom sheet window insets in older Android versions.
+    - (Framework fix) Incorrect bottom sheet window insets in older Android versions.
 
 ### Version 1.10-fix2 (2024-05-19)
 
