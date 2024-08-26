@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-08-25
+date: 2024-08-26
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -75,6 +75,12 @@ date: 2024-08-25
 ---
 
 ## Changelogs
+
+### Version 1.11-fix1 (2024-08-26)
+
+- Bug Fixes:
+    - Fixed an issue where opening Animation customization crash the launcher.
+    - Fixed an issue where top panel can crash the launcher sometimes.
 
 ### Version 1.11 (2024-08-25)
 
