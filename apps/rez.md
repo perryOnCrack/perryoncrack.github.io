@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-08-26
+date: 2024-10-03
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -18,13 +18,15 @@ date: 2024-08-26
 
 - Better feedback system
 - Pinned shortcut
-- Top panel clock customization
+- Clock customization
 - Revised customization menu
+- Home screen vertical placement adjusting.
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Variable scribble stroke width (like the original Z Launcher)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
+- Classic Z Launcher layout
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
@@ -75,6 +77,18 @@ date: 2024-08-26
 ---
 
 ## Changelogs
+
+### Version x.xx (version number not decided yet)
+
+- New Feature:
+    - Classic Z Launcher layout
+
+- Changes:
+    - Prettier animation when pulling up the app list
+    - Suggestion count dialog now set the value immediately 
+
+- Bug Fixes:
+    - Fixed a bug where suggestion count can be set to negative value and crash the launcher forever.
 
 ### Version 1.11-fix1 (2024-08-26)
 
