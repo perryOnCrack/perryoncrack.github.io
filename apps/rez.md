@@ -3,16 +3,14 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-10-06
+date: 2024-10-16
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
-## Development Status
-
-[**Latest project update**]({% post_url 2024-03-26-ReZ-Launcher-beta %})
-
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
+
+## Development Status
 
 ### In Beta (1.12-beta1)
 
@@ -24,19 +22,22 @@ date: 2024-10-06
     - Prettier animation when pulling up the app list
     - Other minor UI changes
 
+### Developing
+
+- Codebase refactor
+- Better feedback system
+- Revised customization menu
+- Pinned shortcut
+
 ### Planned features
 
-- Better feedback system
-- Pinned shortcut
 - Clock customization
-- Revised customization menu
-- Home screen vertical placement adjusting.
+- Home screen vertical placement adjusting
 - More notification style in app info menu
 - App list scrollbar (waiting for the official Jetpack Compose implementation)
 - Variable scribble stroke width (like the original Z Launcher)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
-- Classic Z Launcher layout
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
@@ -69,13 +70,13 @@ date: 2024-10-06
 
 - Unable to use gesture navigation in some brand's customized OS.
 
-    | Brand         | Issue status                                                                                                                        |
-    | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-    | Samsung OneUI | It can be replicated in my friend's device, but can't in Samsung's remote test lab. Maybe it only happens on some version of OneUI? |
-    | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. I can't fix it even if I want.                                                           |
+    | Brand         | Issue status                                                                       |
+    | ------------- | ---------------------------------------------------------------------------------- |
+    | Samsung OneUI | Hard to replicated, seems to only be present in some device?                       |
+    | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. Won't fix. (I can't even if I want to.) |
 
 - Crash when moving or resizing widgets on some devices.
-    - A major cause of this issue has been fixed in `1.9-fix3`, but I'm still getting some report of it happening, maybe there's still other causes.
+    - A major cause of this has been fixed in `1.9-fix3`, but I'm still getting some report of it happening, maybe there's still other causes.
 
 - Contact list can't be retrieved properly in some devices and renders contact search unusable.
 
@@ -88,7 +89,7 @@ date: 2024-10-06
 
 ## Changelogs
 
-### Version 1.12 (version number not decided yet)
+### Version 1.12 (TBD)
 
 - New Feature:
     - Classic Z Launcher layout
