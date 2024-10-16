@@ -26,7 +26,7 @@ date: 2024-10-16
 
 - Codebase refactor
 - Better feedback system
-- Revised customization menu
+- Revised customization menu & options
 - Pinned shortcut
 
 ### Planned features
@@ -72,18 +72,17 @@ date: 2024-10-16
 
     | Brand         | Issue status                                                                       |
     | ------------- | ---------------------------------------------------------------------------------- |
-    | Samsung OneUI | Hard to replicated, seems to only be present in some device?                       |
-    | Xiaomi/POCO   | Caused by Xiaomi's anti-consumer practice. Won't fix. (I can't even if I want to.) |
+    | Samsung OneUI | Hard to replicate, seems to only be present in some device?                        |
+    | Xiaomi/POCO   | Won't fix. Caused by Xiaomi's anti-consumer practice. (I can't even if I want to.) |
 
 - Crash when moving or resizing widgets on some devices.
     - A major cause of this has been fixed in `1.9-fix3`, but I'm still getting some report of it happening, maybe there's still other causes.
 
-- Contact list can't be retrieved properly in some devices and renders contact search unusable.
-
-- When opening bottom sheet UIs, in some condition, the status bar will have incorrect color.
-    - This is caused by the current Compose ModalBottomSheet implementation, I don't have a fix at the moment.
+- When opening bottom sheet UIs, in some condition, the status bar will have the incorrect color.
+    - Caused by the current Compose `ModalBottomSheet` implementation, I don't have a fix at the moment.
 
 - Widget delete button is out of bound when the widget is filling the whole screen.
+- Contact list can't be retrieved in some devices.
 
 ---
 
