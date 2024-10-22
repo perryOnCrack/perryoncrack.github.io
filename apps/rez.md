@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-10-20
+date: 2024-10-23
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -31,6 +31,7 @@ date: 2024-10-20
 - Codebase refactor
 - Better feedback system
 - Revised customization menu & options
+- Font scaling related layout adjusting
 - Pinned shortcut
 - Android 15 Private Space
 
@@ -106,6 +107,11 @@ date: 2024-10-20
 
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
+
+### Version 1.11-fix2 (2024-10-23)
+
+- Bug Fixes:
+    - Fixed incorrect time zone converting of calendar events.
 
 ### Version 1.11-fix1 (2024-08-26)
 
