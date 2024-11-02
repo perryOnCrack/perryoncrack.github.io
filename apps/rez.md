@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-10-23
+date: 2024-11-03
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,7 +12,7 @@ date: 2024-10-23
 
 ## Development Status
 
-### In Beta (1.12-beta2)
+### In Beta (1.12-beta3)
 
 - New Feature:
     - Classic Z Launcher layout
@@ -25,6 +25,8 @@ date: 2024-10-23
 
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher
+    - Fixed incorrect time zone converting of calendar events
+    - Fixed an issue where the status bar might comes back even when set to hiding it
 
 ### Developing
 
@@ -33,7 +35,6 @@ date: 2024-10-23
 - Revised customization menu & options
 - Font scaling related layout adjusting
 - Pinned shortcut
-- Android 15 Private Space
 
 ### Planned features
 
@@ -44,6 +45,7 @@ date: 2024-10-23
 - Variable scribble stroke width (like the original Z Launcher)
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
+- Android 15 Private Space
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
@@ -107,6 +109,7 @@ date: 2024-10-23
 
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
+    - Fixed an issue where the status bar might comes back even when set to hiding it
 
 ### Version 1.11-fix2 (2024-10-23)
 
