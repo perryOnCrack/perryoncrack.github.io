@@ -21,7 +21,7 @@ date: 2024-12-08
 - Changes:
     - Suggestion count dialog now set the value immediately.
     - Prettier animation when pulling up the app list.
-    - ~~UI are now scaling properly with device's font scaling setting.~~ Reverted temporarily until a better solution is found.
+    - ~~UI are now scaling properly with device's font scaling setting.~~ Reverted temporarily until I make a better implementation.
     - Other minor UI changes.
 
 - Bug Fixes:
@@ -55,6 +55,8 @@ date: 2024-12-08
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 - Scrollable widget page
 - Weather on top panel
+- Expanded alias manage
+- Scribble area edge margin for swiping between pages 
 
 ### Some ideas of mine (might not be implemented ever as well)
 
