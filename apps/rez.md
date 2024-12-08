@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-11-03
+date: 2024-12-08
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,32 +12,34 @@ date: 2024-11-03
 
 ## Development Status
 
-### In Beta (1.12-beta3)
+### In Beta (1.12-beta4)
 
 - New Feature:
     - Classic Z Launcher layout
+    - New Revised Customization UI (not completed yet)
 
 - Changes:
-    - Suggestion count dialog now set the value immediately
-    - Prettier animation when pulling up the app list
-    - UI are now scaling properly with device's font scaling setting
-    - Other minor UI changes
+    - Suggestion count dialog now set the value immediately.
+    - Prettier animation when pulling up the app list.
+    - ~~UI are now scaling properly with device's font scaling setting.~~ Reverted temporarily until a better solution is found.
+    - Other minor UI changes.
 
 - Bug Fixes:
-    - Fixed an oversight where suggestion count can be set to negative value and brick the launcher
-    - Fixed incorrect time zone converting of calendar events
-    - Fixed an issue where the status bar might comes back even when set to hiding it
+    - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
+    - Fixed the incorrect time zone conversion when querying for calendar events.
+    - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
+    - Fixed an issue where the status bar might comes back even when set to hiding it.
 
 ### Developing
 
 - Codebase refactor
-- Better feedback system
-- Revised customization menu & options
-- Font scaling related layout adjusting
-- Pinned shortcut
+- New Revised Customization UI
+- Proper layout scaling
 
 ### Planned features
 
+- Better feedback system
+- Pinned shortcut
 - Clock customization
 - Home screen vertical placement adjusting
 - More notification style in app info menu
@@ -96,7 +98,7 @@ date: 2024-11-03
 
 ## Changelogs
 
-### Version 1.12 (TBD)
+### Version 1.12 (TBD, In Development Hell)
 
 - New Feature:
     - Classic Z Launcher layout
@@ -110,11 +112,12 @@ date: 2024-11-03
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
     - Fixed an issue where the status bar might comes back even when set to hiding it
+    - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
 
 ### Version 1.11-fix2 (2024-10-23)
 
 - Bug Fixes:
-    - Fixed incorrect time zone converting of calendar events.
+    - Fixed the incorrect time zone conversion when querying for calendar events.
 
 ### Version 1.11-fix1 (2024-08-26)
 
