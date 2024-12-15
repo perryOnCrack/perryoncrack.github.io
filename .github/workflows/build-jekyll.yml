@@ -23,7 +23,7 @@ jobs:
             ${{ runner.os }}-gems-
 
       # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@d2d9df75d250fcc79909df9104ac12dc9f1d43e9
+      - uses: jeffreytse/jekyll-deploy-action@master
         env:
             JEKYLLGRAM_TOKEN: ${{ secrets.JEKYLLGRAM_TOKEN }}
         with:
