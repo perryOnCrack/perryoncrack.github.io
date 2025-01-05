@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2024-12-22
+date: 2025-01-05
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,7 +12,7 @@ date: 2024-12-22
 
 ## Development Status
 
-### In Beta (1.12-beta5)
+### In Beta (1.12-beta6)
 
 - New Feature:
     - Classic Z Launcher layout
@@ -22,8 +22,10 @@ date: 2024-12-22
     - Suggestion count dialog now set the value immediately.
     - Prettier animation when pulling up the app list.
     - Proper UI scaling with different font scaling settings.
+    - Icon sizes can now be adjusted using a slider.
+        - Previous icon size settings have been reset.
     - Other minor UI changes.
-    - General backend improvements.
+    - Major refactoring for various features.
 
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
@@ -35,7 +37,6 @@ date: 2024-12-22
 
 - Codebase refactor
 - New Revised Customization UI
-- Proper layout scaling
 
 ### Planned features
 
@@ -112,8 +113,10 @@ date: 2024-12-22
     - Suggestion count dialog now set the value immediately
     - Prettier animation when pulling up the app list
     - Proper UI scaling with different font scaling settings.
+    - Icon sizes can now be adjusted using a slider.
+        - Previous icon size settings have been reset.
     - Other minor UI changes.
-    - General backend improvements.
+    - Major refactoring for various features.
 
 - Bug Fixes:
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
