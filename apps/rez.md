@@ -96,7 +96,7 @@ date: 2025-01-28
     - Major refactoring for various features.
 
 - New Experimental Features:
-    - Unlock screen rotation for tablet &amp; foldables.
+    - Unlock screen rotation for tablet & foldables.
     - Revised UI customization screen (work in progress).
 
 - Bug Fixes:
