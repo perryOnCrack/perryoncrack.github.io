@@ -81,7 +81,7 @@ date: 2025-01-28
 
 ## Changelogs
 
-### Version 1.12 (2024-01-28)
+### Version 1.12 (2025-01-28)
 
 - New Feature:
     - Classic Z Launcher layout
