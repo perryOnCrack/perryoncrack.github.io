@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-01-05
+date: 2025-01-28
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,30 +12,8 @@ date: 2025-01-05
 
 ## Development Status
 
-### In Beta (1.12-beta6)
-
-- New Feature:
-    - Classic Z Launcher layout
-    - New Revised Customization UI (not completed yet)
-
-- Changes:
-    - Suggestion count dialog now set the value immediately.
-    - Prettier animation when pulling up the app list.
-    - Proper UI scaling with different font scaling settings.
-    - Icon sizes can now be adjusted using a slider.
-        - Previous icon size settings have been reset.
-    - Other minor UI changes.
-    - Major refactoring for various features.
-
-- Bug Fixes:
-    - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
-    - Fixed the incorrect time zone conversion when querying for calendar events.
-    - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
-    - Fixed an issue where the status bar might comes back even when set to hiding it.
-
 ### Developing
 
-- Codebase refactor
 - New Revised Customization UI
 
 ### Planned features
@@ -45,8 +23,9 @@ date: 2025-01-05
 - Clock customization
 - Home screen vertical placement adjusting
 - More notification style in app info menu
-- App list scrollbar (waiting for the official Jetpack Compose implementation)
-- Variable scribble stroke width (like the original Z Launcher)
+- App list scrollbar
+    - Waiting for the official Jetpack Compose implementation
+- Z Launcher style scribble stroke
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - Other launcher language support
 - Android 15 Private Space
@@ -102,27 +81,31 @@ date: 2025-01-05
 
 ## Changelogs
 
-### Version 1.12 (TBD, In Development Hell)
+### Version 1.12 (2024-01-28)
 
 - New Feature:
     - Classic Z Launcher layout
-    - New Revised Customization UI 
-        - And more customization options!
+    - Experimental Features section
 
 - Changes:
-    - Suggestion count dialog now set the value immediately
-    - Prettier animation when pulling up the app list
+    - Prettier animations when interacting with the app list.
     - Proper UI scaling with different font scaling settings.
     - Icon sizes can now be adjusted using a slider.
         - Previous icon size settings have been reset.
     - Other minor UI changes.
     - Major refactoring for various features.
 
-- Bug Fixes:
-    - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
-    - Fixed an issue where the status bar might comes back even when set to hiding it
-    - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
+- New Experimental Features:
+    - Unlock screen rotation for tablet &amp; foldables.
+    - Revised UI customization screen (work in progress).
 
+- Bug Fixes:
+    - Fixed an oversight where suggestion count dialog didn't set the value immediately.
+    - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
+    - Fixed an issue where the status bar might comes back even when set to hiding it.
+    - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
+    - Fixed the incorrect time zone conversion for calendar all day events.
+    
 ### Version 1.11-fix2 (2024-10-23)
 
 - Bug Fixes:
