@@ -104,7 +104,8 @@ date: 2025-01-28
     - Fixed an oversight where suggestion count can be set to negative value and brick the launcher.
     - Fixed an issue where the status bar might comes back even when set to hiding it.
     - Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.
-    - Fixed the incorrect time zone conversion for calendar all day events.
+    - Fixed incorrect time zone conversion for calendar all day events.
+    - Fixed incorrect time frame handing for single day all day events.
     
 ### Version 1.11-fix2 (2024-10-23)
 
