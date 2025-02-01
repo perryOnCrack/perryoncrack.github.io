@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-01-28
+date: 2025-02-01
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -19,24 +19,30 @@ date: 2025-01-28
 ### Planned features
 
 - Better feedback system
+- 中文拼音搜尋(拼音 & 注音)
 - Pinned shortcut
-- Clock customization
-- Home screen vertical placement adjusting
+- Android 15 Private Space
+- Weather on top panel
+
+### Planned, But Not In Priority
+
+- More Customizations / UI styles
+    - Clock customization
+    - Home screen vertical placement adjustment
+    - Z Launcher style scribble stroke
+    - Compact app item style
 - More notification style in app info menu
+- Other launcher language support
+- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - App list scrollbar
     - Waiting for the official Jetpack Compose implementation
-- Z Launcher style scribble stroke
-- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
-- Other launcher language support
-- Android 15 Private Space
 
 ### User Suggested Features & Improvements (might not be implemented ever)
 
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 - Scrollable widget page
-- Weather on top panel
-- Expanded alias manage
+- Extended alias management
 - Scribble area edge margin for swiping between pages 
 
 ### Some ideas of mine (might not be implemented ever as well)
