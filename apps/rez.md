@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-03-13
+date: 2025-03-26
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -87,18 +87,19 @@ date: 2025-03-13
 
 ## Changelogs
 
-### Version 1.12.1 (TBD)
+### Version 1.12.1 (2025-03-26)
 
 - Scribble Search Changes
     - Scribbled letters now always display with an uppercase first letter and lowercase for the rest.
-    - Accented and non-accented characters are now interchangeable in search.
+    - Accented & non-accented letters are now interchangeable in search.
     - Symbols are now ignored in search:
         - For example: `Yeet-That*123` will be treated as `YeetThat123`.
-        - Due to this change, symbol scribbling has been disabled.
-    - Refactored word collection in search, should result in a slight speed improvement.
+        - Symbol scribbling has been disabled due to this change.
+    - Refactored search token collection. Should result in a slight speed improvement.
 
 - Other Changes
     - Minor optimizations to reduce memory and CPU usage.
+    - Small adjustments to UI elements in setting pages.
 
 ### Version 1.12 (2025-01-28)
 
