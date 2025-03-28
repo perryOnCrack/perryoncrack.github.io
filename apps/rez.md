@@ -87,6 +87,11 @@ date: 2025-03-26
 
 ## Changelogs
 
+### Version 1.12.1-fix1 (2025-03-28)
+
+- Bug Fixes
+    - Fixed Hide Suggestion customization not hiding suggestions.
+
 ### Version 1.12.1 (2025-03-26)
 
 - Scribble Search Changes
