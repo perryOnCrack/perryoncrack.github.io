@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-03-28
+date: 2025-05-11
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,11 +14,10 @@ date: 2025-03-28
 
 ### Developing
 
-- New Revised Customization UI
+- Better feedback system
 
 ### Planned features
 
-- Better feedback system
 - 中文拼音搜尋(拼音 & 注音)
 - Pinned shortcut
 - Android 15 Private Space
@@ -58,6 +57,10 @@ date: 2025-03-28
 
 - General code refactoring
 
+### Shelved
+
+- New Revised Customization UI
+
 ### Won't implement
 
 - Web search
@@ -86,6 +89,14 @@ date: 2025-03-28
 ---
 
 ## Changelogs
+
+### Version 1.12.2 (2025-05-11)
+
+- Bug Fixes
+    - Quick Launch now properly shrinks to disappearance when pulling up.
+
+- Other Changes
+    - Minor optimizations for scribble gesture calculation.
 
 ### Version 1.12.1-fix1 (2025-03-28)
 
