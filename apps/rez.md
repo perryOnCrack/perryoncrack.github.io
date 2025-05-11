@@ -90,7 +90,7 @@ date: 2025-05-11
 
 ## Changelogs
 
-### Version 1.12.2 (2025-05-11)
+### Version 1.12.2 (TBD)
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
