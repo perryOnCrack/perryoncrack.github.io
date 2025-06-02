@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-05-11
+date: 2025-06-02
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,13 +14,13 @@ date: 2025-05-11
 
 ### Developing
 
+- Private Space (Android 15+)
 - Better feedback system
 
 ### Planned features
 
 - 中文拼音搜尋(拼音 & 注音)
 - Pinned shortcut
-- Android 15 Private Space
 - Weather on top panel
 
 ### Planned, But Not In Priority
@@ -90,7 +90,10 @@ date: 2025-05-11
 
 ## Changelogs
 
-### Version 1.12.2 (TBD)
+### Version 1.13 (TBD)
+
+- New Feature
+    - (Android 15+) Private Space support
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
