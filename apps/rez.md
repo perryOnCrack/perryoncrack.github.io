@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-06-02
+date: 2025-07-06
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -81,7 +81,8 @@ date: 2025-06-02
     - A major cause of this has been fixed in `1.9-fix3`, but I'm still getting some report of it happening, maybe there's still other causes.
 
 - When opening bottom sheet UIs, in some condition, the status bar will have the incorrect color.
-    - Caused by the current Compose `ModalBottomSheet` implementation, I don't have a fix at the moment.
+    - Caused by the current Compose `ModalBottomSheet` implementation, ~~I don't have a fix at the moment.~~
+    - There should be a way to fix this in the current Compose, I'll look into it in the near future.
 
 - Widget delete button is out of bound when the widget is filling the whole screen.
 - Contact list can't be retrieved in some devices.
@@ -93,12 +94,14 @@ date: 2025-06-02
 ### Version 1.13 (TBD)
 
 - New Feature
-    - (Android 15+) Private Space support
+    - Private Space support (Android 15+)
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
 
-- Other Changes
+- Changes
+    - Screen Rotation is now default to enable for device with a 3:2 screen 
+    - is now moved to Customization Settings.
     - Minor optimizations for scribble gesture calculation.
 
 ### Version 1.12.1-fix1 (2025-03-28)
