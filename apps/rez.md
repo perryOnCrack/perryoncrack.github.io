@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-07-06
+date: 2025-07-15
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -11,6 +11,10 @@ date: 2025-07-06
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
 ## Development Status
+
+### In Beta (1.13-beta1)
+
+- Private Space
 
 ### Developing
 
@@ -94,15 +98,26 @@ date: 2025-07-06
 ### Version 1.13 (TBD)
 
 - New Feature
-    - Private Space support (Android 15+)
+    - Private Space Support (Android 15+)
+
+- Changes
+    - Profile switching UI has been redesigned.
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
+    - Fixed an issue where item animation got triggered randomly.
 
-- Changes
-    - Screen Rotation is now default to enable for device with a 3:2 screen 
-    - is now moved to Customization Settings.
+- Experimental Feature Changes
+    - Screen Rotation is now enabled by default and moved to Customizations settings.
+        - This still only apply to device with a screen aspect ratio of 3:2 or less.
+
+- Background Changes
     - Minor optimizations for scribble gesture calculation.
+    - App structure, icon pack system &amp; Profile system refactored.
+
+- Known Bugs
+    - Quick Launch Editor can sometime bugged out when opening it.
+    - Private Space app is not hidden in Quick Launch Editor.
 
 ### Version 1.12.1-fix1 (2025-03-28)
 
