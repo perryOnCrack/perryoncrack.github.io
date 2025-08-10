@@ -40,7 +40,7 @@ date: 2025-08-10
     - Z Launcher style scribble stroke
     - Compact app item style
 - More notification style in app info menu
-- Other launcher language support
+- Other translation support
 - Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - App list scrollbar
     - Waiting for the official Jetpack Compose implementation
