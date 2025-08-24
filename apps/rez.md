@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-08-10
+date: 2025-08-24
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -19,12 +19,13 @@ date: 2025-08-10
 #### Beta Known Issues
 
 - Quick Launch can sometime bugged out when opening it.
+- Private Space app is not hidden in Quick Launch Editor.
 - Work Profile broken on Samsung devices (working on a fix right now...)
 
 ### Developing
 
 - Private Space (Android 15+)
-- Better feedback system (almost finished)
+- On device logging and manual feedback
 
 ### Planned features
 
@@ -104,13 +105,18 @@ date: 2025-08-10
 
 - New Feature
     - Private Space Support (Android 15+)
+    - On-device logging & attaching it when sending feedback
+        - Disabled by default, can be enabled in Settings -> Developer Settings.
 
 - Changes
     - Profile switching UI has been redesigned.
+    - Reverted an unintended behavior where clicking on Quick Launch area can open the app list.
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
     - Fixed an issue where item animation got triggered randomly.
+    - Fixed incorrect display cutout paddings when hiding status bar.
+    - Fixed an issue where some icon packs don't showing up in the settings.
 
 - Experimental Feature Changes
     - Screen Rotation is now enabled by default and moved to Customizations settings.
@@ -121,8 +127,7 @@ date: 2025-08-10
     - App structure, icon pack system &amp; Profile system refactored.
 
 - Known Bugs
-    - Quick Launch Editor can sometime bugged out when opening it.
-    - Private Space app is not hidden in Quick Launch Editor.
+    - Quick Launch Editor can sometime bugging out.
 
 ### Version 1.12.1-fix1 (2025-03-28)
 
