@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-08-24
+date: 2025-08-30
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,20 +12,19 @@ date: 2025-08-24
 
 ## Development Status
 
-### In Beta (1.13-beta1)
+### In Beta (1.13-beta2)
 
-- Private Space
+- Private Space (Android 15+)
+- Clone App Support (Android 15+)
+- On-device logging (optional, disabled by default)
 
 #### Beta Known Issues
 
 - Quick Launch can sometime bugged out when opening it.
-- Private Space app is not hidden in Quick Launch Editor.
-- Work Profile broken on Samsung devices (working on a fix right now...)
 
 ### Developing
 
-- Private Space (Android 15+)
-- On device logging and manual feedback
+- Logging adjustments
 
 ### Planned features
 
@@ -105,12 +104,16 @@ date: 2025-08-24
 
 - New Feature
     - Private Space Support (Android 15+)
-    - On-device logging & attaching it when sending feedback
-        - Disabled by default, can be enabled in Settings -> Developer Settings.
+    - Clone app support (Android 15+)
+        - Clone apps will be shown in the main app list and can be searched just like normal.
+    - On-device logging (optional, disabled by default)
+        - Enable it via Settings -> Developer Options -> Enable Logging.
+        - When enabled, the Send Feedback option allows you to include logs.
+        - All logs are stored locally on your device; nothing is sent without your consent.
 
 - Changes
     - Profile switching UI has been redesigned.
-    - Reverted an unintended behavior where clicking on Quick Launch area can open the app list.
+    - Reverted an unintended behavior: Clicking on Quick Launch area can no longer open the app list.
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
@@ -124,7 +127,7 @@ date: 2025-08-24
 
 - Background Changes
     - Minor optimizations for scribble gesture calculation.
-    - App structure, icon pack system &amp; Profile system refactored.
+    - App structure, icon pack system & Profile system refactored.
 
 - Known Bugs
     - Quick Launch Editor can sometime bugging out.
