@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-08-30
+date: 2025-09-13
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -12,11 +12,12 @@ date: 2025-08-30
 
 ## Development Status
 
-### In Beta (1.13-beta2)
+### In Beta (1.13-beta3)
 
 - Private Space (Android 15+)
 - Clone App Support (Android 15+)
 - On-device logging (optional, disabled by default)
+- Search Result Highlight
 
 #### Beta Known Issues
 
@@ -24,7 +25,7 @@ date: 2025-08-30
 
 ### Developing
 
-- Logging adjustments
+- Finalizing 1.13.
 
 ### Planned features
 
@@ -111,9 +112,16 @@ date: 2025-08-30
         - When enabled, the Send Feedback option allows you to include logs.
         - All logs are stored locally on your device; nothing is sent without your consent.
 
+- Scribble Search Changes
+    - Search result now highlight matched letters.
+    - Search is now based on regex `\b` tag, symbols are now counted as word separators:
+        - For example: `Yeet-That*123` will be treated as 3 words: `Yeet`, `That` & `123`.
+    - Refactored search token collection (again). Should result in a slight speed improvement.
+
 - Changes
     - Profile switching UI has been redesigned.
     - Reverted an unintended behavior: Clicking on Quick Launch area can no longer open the app list.
+    - 16kb page size support.
 
 - Bug Fixes
     - Quick Launch now properly shrinks to disappearance when pulling up.
