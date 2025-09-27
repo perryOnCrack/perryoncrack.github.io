@@ -87,7 +87,7 @@ date: 2025-09-27
 
 ## Changelogs
 
-### Version 1.13 (2025-09-28)
+### Version 1.13 (2025-09-27)
 
 - New Feature
     - Private Space support (Android 15+)
