@@ -12,21 +12,6 @@ date: 2025-09-27
 
 ## Development Status
 
-### In Beta (1.13-beta3)
-
-- Private Space (Android 15+)
-- Clone App Support (Android 15+)
-- On-device logging (optional, disabled by default)
-- Search Result Highlight
-
-#### Beta Known Issues
-
-- Quick Launch can sometime bugged out when opening it.
-
-### Developing
-
-- Finalizing 1.13.
-
 ### Planned features
 
 - 中文拼音搜尋(拼音 & 注音)
@@ -96,6 +81,7 @@ date: 2025-09-27
 
 - Widget delete button is out of bound when the widget is filling the whole screen.
 - Contact list can't be retrieved in some devices.
+- Quick Launch can sometime bugged out when opening it.
 
 ---
 
