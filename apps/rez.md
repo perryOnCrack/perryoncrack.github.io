@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-09-13
+date: 2025-09-27
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -101,10 +101,10 @@ date: 2025-09-13
 
 ## Changelogs
 
-### Version 1.13 (TBD)
+### Version 1.13 (2025-09-28)
 
 - New Feature
-    - Private Space Support (Android 15+)
+    - Private Space support (Android 15+)
     - Clone app support (Android 15+)
         - Clone apps will be shown in the main app list and can be searched just like normal.
     - On-device logging (optional, disabled by default)
@@ -123,12 +123,6 @@ date: 2025-09-13
     - Reverted an unintended behavior: Clicking on Quick Launch area can no longer open the app list.
     - 16kb page size support.
 
-- Bug Fixes
-    - Quick Launch now properly shrinks to disappearance when pulling up.
-    - Fixed an issue where item animation got triggered randomly.
-    - Fixed incorrect display cutout paddings when hiding status bar.
-    - Fixed an issue where some icon packs don't showing up in the settings.
-
 - Experimental Feature Changes
     - Screen Rotation is now enabled by default and moved to Customizations settings.
         - This still only apply to device with a screen aspect ratio of 3:2 or less.
@@ -136,6 +130,12 @@ date: 2025-09-13
 - Background Changes
     - Minor optimizations for scribble gesture calculation.
     - App structure, icon pack system & Profile system refactored.
+
+- Bug Fixes
+    - Quick Launch now properly shrinks to disappearance when pulling up.
+    - Fixed an issue where item animation got triggered randomly.
+    - Fixed incorrect display cutout paddings when hiding status bar.
+    - Fixed an issue where some icon packs don't showing up in the settings.
 
 - Known Bugs
     - Quick Launch Editor can sometime bugging out.
