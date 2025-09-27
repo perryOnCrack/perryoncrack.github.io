@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>ReZ Launcher | perryOnCrack’s Devlog &amp; Photos</title>
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="ReZ Launcher">
+<meta name="author" content="perryOnCrack">
+<meta property="og:locale" content="en">
+<meta name="description" content="perryOnCrack’s personal website Devlog Photo Portfolio">
+<meta property="og:description" content="perryOnCrack’s personal website Devlog Photo Portfolio">
+<link rel="canonical" href="https://www.perryoncrack.me/apps/rez">
+<meta property="og:url" content="https://www.perryoncrack.me/apps/rez">
+<meta property="og:site_name" content="perryOnCrack’s Devlog &amp; Photos">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-09-27T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="ReZ Launcher">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"perryOnCrack"},"dateModified":"2025-09-27T00:00:00+00:00","datePublished":"2025-09-27T00:00:00+00:00","description":"perryOnCrack’s personal website Devlog Photo Portfolio","headline":"ReZ Launcher","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.perryoncrack.me/apps/rez"},"url":"https://www.perryoncrack.me/apps/rez"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://www.perryoncrack.me/feed.xml" title="perryOnCrack's Devlog &amp; Photos">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="perryOnCrack's Devlog &amp; Photos" src="" onerror="this.style.display='none'">
+  perryOnCrack's Devlog &amp; Photos
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/apps/rez">REZ LAUNCHER</a><a class="page-link" href="/photos/">PHOTOS</a><a class="page-link" href="/projects/">PROJECTS</a><a class="page-link" href="/about/">ABOUT</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">ReZ Launcher</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2025-09-27T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-09-27
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 14 mins</span>
+  </p></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p><a href="https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="/assets/images/projects/rez-banner-trans-back.png" alt="Get it on Google Play" height="120"></a></p>
+
+<p><strong>If you have any suggestions, you can contact me through my contact infos in the <a href="/about">about</a> page.</strong></p>
+
+<h2 id="development-status">Development Status</h2>
+
+<h3 id="planned-features">Planned features</h3>
+
+<ul>
+  <li>中文拼音搜尋(拼音 &amp; 注音)</li>
+  <li>Pinned shortcut</li>
+  <li>Weather on top panel</li>
+</ul>
+
+<h3 id="planned-but-not-in-priority">Planned, But Not In Priority</h3>
+
+<ul>
+  <li>More Customizations / UI styles
+    <ul>
+      <li>Clock customization</li>
+      <li>Home screen vertical placement adjustment</li>
+      <li>Z Launcher style scribble stroke</li>
+      <li>Compact app item style</li>
+    </ul>
+  </li>
+  <li>More notification style in app info menu</li>
+  <li>Other translation support</li>
+  <li>Huge rewrite/refactor of the widget space (it’s rotten spaghetti in there)</li>
+  <li>App list scrollbar
+    <ul>
+      <li>Waiting for the official Jetpack Compose implementation</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="user-suggested-features--improvements-might-not-be-implemented-ever">User Suggested Features &amp; Improvements (might not be implemented ever)</h3>
+
+<ul>
+  <li>Customizable font &amp; font size</li>
+  <li>App list grid view (it will break the current UI pattern, some stuff will have to change before it’s possible to be implemented.)</li>
+  <li>Scrollable widget page</li>
+  <li>Extended alias management</li>
+  <li>Scribble area edge margin for swiping between pages</li>
+</ul>
+
+<h3 id="some-ideas-of-mine-might-not-be-implemented-ever-as-well">Some ideas of mine (might not be implemented ever as well)</h3>
+
+<ul>
+  <li>Adjustment to the suggestion algorithm
+    <ul>
+      <li>Maybe ML-based algorithm?</li>
+    </ul>
+  </li>
+  <li>Foldable device screen layout</li>
+  <li>Other transition animations</li>
+  <li>Fully customizable UI color</li>
+  <li>Predictive Back API support</li>
+</ul>
+
+<h3 id="always-be-doing">Always be doing</h3>
+
+<ul>
+  <li>General code refactoring</li>
+</ul>
+
+<h3 id="shelved">Shelved</h3>
+
+<ul>
+  <li>New Revised Customization UI</li>
+</ul>
+
+<h3 id="wont-implement">Won’t implement</h3>
+
+<ul>
+  <li>Web search</li>
+  <li>Device file search</li>
+  <li>Google Now page</li>
+  <li>Typing search/search bar (kinda defeat the point of scribble search)</li>
+</ul>
+
+<h3 id="known-issues">Known issues</h3>
+
+<ul>
+  <li>
+    <p>Unable to use gesture navigation in some brand’s customized OS.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Brand</th>
+          <th>Issue status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Samsung OneUI</td>
+          <td>Hard to replicate, seems to only be present in some device?</td>
+        </tr>
+        <tr>
+          <td>Xiaomi/POCO</td>
+          <td>Won’t fix. Caused by Xiaomi’s anti-consumer practice. (I can’t even if I want to.)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Crash when moving or resizing widgets on some devices.
+    <ul>
+      <li>A major cause of this has been fixed in <code class="language-plaintext highlighter-rouge">1.9-fix3</code>, but I’m still getting some report of it happening, maybe there’s still other causes.</li>
+    </ul>
+  </li>
+  <li>When opening bottom sheet UIs, in some condition, the status bar will have the incorrect color.
+    <ul>
+      <li>Caused by the current Compose <code class="language-plaintext highlighter-rouge">ModalBottomSheet</code> implementation, <del>I don’t have a fix at the moment.</del>
+</li>
+      <li>There should be a way to fix this in the current Compose, I’ll look into it in the near future.</li>
+    </ul>
+  </li>
+  <li>Widget delete button is out of bound when the widget is filling the whole screen.</li>
+  <li>Contact list can’t be retrieved in some devices.</li>
+  <li>Quick Launch can sometime bugged out when opening it.</li>
+</ul>
+
+<hr>
+
+<h2 id="changelogs">Changelogs</h2>
+
+<h3 id="version-113-2025-09-27">Version 1.13 (2025-09-27)</h3>
+
+<ul>
+  <li>New Feature
+    <ul>
+      <li>Private Space support (Android 15+)</li>
+      <li>Clone app support (Android 15+)
+        <ul>
+          <li>Clone apps will be shown in the main app list and can be searched just like normal.</li>
+        </ul>
+      </li>
+      <li>On-device logging (optional, disabled by default)
+        <ul>
+          <li>Enable it via Settings -&gt; Developer Options -&gt; Enable Logging.</li>
+          <li>When enabled, the Send Feedback option allows you to include logs.</li>
+          <li>All logs are stored locally on your device; nothing is sent without your consent.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Scribble Search Changes
+    <ul>
+      <li>Search result now highlight matched letters.</li>
+      <li>Search is now based on regex <code class="language-plaintext highlighter-rouge">\b</code> tag, symbols are now counted as word separators:
+        <ul>
+          <li>For example: <code class="language-plaintext highlighter-rouge">Yeet-That*123</code> will be treated as 3 words: <code class="language-plaintext highlighter-rouge">Yeet</code>, <code class="language-plaintext highlighter-rouge">That</code> &amp; <code class="language-plaintext highlighter-rouge">123</code>.</li>
+        </ul>
+      </li>
+      <li>Refactored search token collection (again). Should result in a slight speed improvement.</li>
+    </ul>
+  </li>
+  <li>Changes
+    <ul>
+      <li>Profile switching UI has been redesigned.</li>
+      <li>Reverted an unintended behavior: Clicking on Quick Launch area can no longer open the app list.</li>
+      <li>16kb page size support.</li>
+    </ul>
+  </li>
+  <li>Experimental Feature Changes
+    <ul>
+      <li>Screen Rotation is now enabled by default and moved to Customizations settings.
+        <ul>
+          <li>This still only apply to device with a screen aspect ratio of 3:2 or less.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Background Changes
+    <ul>
+      <li>Minor optimizations for scribble gesture calculation.</li>
+      <li>App structure, icon pack system &amp; Profile system refactored.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes
+    <ul>
+      <li>Quick Launch now properly shrinks to disappearance when pulling up.</li>
+      <li>Fixed an issue where item animation got triggered randomly.</li>
+      <li>Fixed incorrect display cutout paddings when hiding status bar.</li>
+      <li>Fixed an issue where some icon packs don’t showing up in the settings.</li>
+    </ul>
+  </li>
+  <li>Known Bugs
+    <ul>
+      <li>Quick Launch Editor can sometime bugging out.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-1121-fix1-2025-03-28">Version 1.12.1-fix1 (2025-03-28)</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed Hide Suggestion customization not hiding suggestions.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-1121-2025-03-26">Version 1.12.1 (2025-03-26)</h3>
+
+<ul>
+  <li>Scribble Search Changes
+    <ul>
+      <li>Scribbled letters now always display with an uppercase first letter and lowercase for the rest.</li>
+      <li>Accented &amp; non-accented letters are now interchangeable in search.</li>
+      <li>Symbols are now ignored in search:
+        <ul>
+          <li>For example: <code class="language-plaintext highlighter-rouge">Yeet-That*123</code> will be treated as <code class="language-plaintext highlighter-rouge">YeetThat123</code>.</li>
+          <li>Symbol scribbling has been disabled due to this change.</li>
+        </ul>
+      </li>
+      <li>Refactored search token collection. Should result in a slight speed improvement.</li>
+    </ul>
+  </li>
+  <li>Other Changes
+    <ul>
+      <li>Minor optimizations to reduce memory and CPU usage.</li>
+      <li>Small adjustments to UI elements in setting pages.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-112-2025-01-28">Version 1.12 (2025-01-28)</h3>
+
+<ul>
+  <li>New Feature:
+    <ul>
+      <li>Classic Z Launcher layout</li>
+      <li>Experimental Features section</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Prettier animations when interacting with the app list.</li>
+      <li>Proper UI scaling with different font scaling settings.</li>
+      <li>Icon sizes can now be adjusted using a slider.
+        <ul>
+          <li>Previous icon size settings have been reset.</li>
+        </ul>
+      </li>
+      <li>Other minor UI changes.</li>
+      <li>Major refactoring for various features.</li>
+    </ul>
+  </li>
+  <li>New Experimental Features:
+    <ul>
+      <li>Unlock screen rotation for tablet &amp; foldables.</li>
+      <li>Revised UI customization screen (work in progress).</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an oversight where suggestion count dialog didn’t set the value immediately.</li>
+      <li>Fixed an oversight where suggestion count can be set to negative value and brick the launcher.</li>
+      <li>Fixed an issue where the status bar might comes back even when set to hiding it.</li>
+      <li>Fixed a bad querying implementation for calendar events that crash the launcher in certain condition.</li>
+      <li>Fixed incorrect time zone conversion for calendar all day events.</li>
+      <li>Fixed incorrect time frame handing for single day all day events.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-111-fix2-2024-10-23">Version 1.11-fix2 (2024-10-23)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed the incorrect time zone conversion when querying for calendar events.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-111-fix1-2024-08-26">Version 1.11-fix1 (2024-08-26)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where opening Animation customization crash the launcher.</li>
+      <li>Fixed an issue where top panel can crash the launcher sometimes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-111-2024-08-25">Version 1.11 (2024-08-25)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Progressive web app support <em>(WebApk only)</em>
+</li>
+      <li>Upcoming calendar event
+        <ul>
+          <li>Access in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Feature Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Calendar Event</code>
+</li>
+          <li>Work profile calendar support will be added in later update.</li>
+        </ul>
+      </li>
+      <li>UI animation customization
+        <ul>
+          <li>Access it in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Customizations</code> -&gt; <code class="language-plaintext highlighter-rouge">Animations</code>
+</li>
+          <li>Available animations: <code class="language-plaintext highlighter-rouge">Classic Z Launcher</code>, <code class="language-plaintext highlighter-rouge">Crossfade</code> &amp; <code class="language-plaintext highlighter-rouge">No animation</code>
+</li>
+        </ul>
+      </li>
+      <li>More customization options
+        <ul>
+          <li>App/contact suggestion amount</li>
+          <li>Hide all suggestion</li>
+          <li>Top panel content display order</li>
+        </ul>
+      </li>
+      <li>New gesture: Drag up to open app list</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Improve scribble behavior
+        <ul>
+          <li>It now mimics the original Z Launcher’s behavior, should be more responsive and allowing faster input.</li>
+          <li>Scribble gestures (backspace &amp; space) now have a 230ms timeout.</li>
+        </ul>
+      </li>
+      <li>Unified &amp; updated all dialog styling.</li>
+      <li>Background improvements.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>(Framework fix) Incorrect bottom sheet window insets in older Android versions.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-110-fix2-2024-05-19">Version 1.10-fix2 (2024-05-19)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed a wrong calculation for widget’s maximum size.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-110-fix1-2024-05-11">Version 1.10-fix1 (2024-05-11)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed a crash issue caused by Compose.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-110-2024-05-04">Version 1.10 (2024-05-04)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Double tap to sleep
+        <ul>
+          <li>Access it in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Feature Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Gesture</code>.</li>
+          <li>Available to Android 9 &amp; later devices.</li>
+        </ul>
+      </li>
+      <li>Newly installed apps will now be shown in the app list &amp; searchable with the word <code class="language-plaintext highlighter-rouge">New!</code>.
+        <ul>
+          <li>The newly installed status will last 48 hours for each new app.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Apps &amp; contacts in the Quick Launch will no longer being suggested.
+        <ul>
+          <li>They will still show up in scribble search results.</li>
+        </ul>
+      </li>
+      <li>Added shadow to widget delete button for better visibility.</li>
+      <li>Setting pages reorganized and wording adjusted.</li>
+      <li>Various UI visual adjustments.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed incorrect icon size &amp; color on notification cards.</li>
+      <li>Workaround on a background crashing issue.</li>
+      <li>Clicks after swiping on pages are now registered correctly.</li>
+      <li>Fixed an issue where click on a scribble candidate reset its scrolling.</li>
+      <li>Fixed an issue where sometimes scribble can crash the launcher.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-fix3-2024-04-06">Version 1.9-fix3 (2024-04-06)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some widgets will crash the launcher when trying to resize them.</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Added shadow to widget delete button for better visibility.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-fix2-2024-01-21">Version 1.9-fix2 (2024-01-21)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where toggling work apps can crash the launcher.</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">Enable Widget Area</code> &amp; <code class="language-plaintext highlighter-rouge">Notification Dot Display Order</code> can be accessed in Customization menu now.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-fix1-2024-01-11">Version 1.9-fix1 (2024-01-11)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some app shortcuts can crash the launcher.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-19-2024-01-09">Version 1.9 (2024-01-09)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Updated Scribble settings:
+        <ul>
+          <li>Added all of the ML Kit supported languages.</li>
+          <li>Rearranging language precedence is now done by drag &amp; drop.</li>
+          <li>Added proper install status and the ability to re-download on the spot.</li>
+        </ul>
+      </li>
+      <li>Option to hide status bar in home screen. (Access it in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Customization</code> -&gt; <code class="language-plaintext highlighter-rouge">Status Bar</code>)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes/Workarounds:
+    <ul>
+      <li>Disabled language delete button while downloading &amp; deleting to avoid getting ghost installs.</li>
+      <li>Fixed an issue where some notifications can crash the launcher.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-181-fix1-2023-12-31">Version 1.8.1-fix1 (2023-12-31)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Re-added SET_ALARM permission because some device manufactures’ clock apps need it to view alarms.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-181-2023-12-28">Version 1.8.1 (2023-12-28)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Notification dot color is now customizable.</li>
+      <li>Clicking the date of home screen clock now opens the calendar.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed some UI elements using the incorrect color &amp; size.</li>
+      <li>Removed unnecessary permissions.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-18-fix1-2023-12-22">Version 1.8-fix1 (2023-12-22)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some Android 14 devices can’t add widgets that require configuration.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-18-2023-12-21">Version 1.8 (2023-12-21)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Work profile support:
+        <ul>
+          <li>Supported features:
+            <ul>
+              <li>Work apps: Show in app list, suggestions &amp; search, hidden when work profile is paused.</li>
+              <li>Work app widgets: Show in widget list, hidden when work profile is paused.</li>
+              <li>Notification dot for work apps</li>
+            </ul>
+          </li>
+          <li>Unsupported features (due to API constraints):
+            <ul>
+              <li>Media control for work apps</li>
+              <li>Contact search for work profile contacts</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Customization Options: (Access them in <code class="language-plaintext highlighter-rouge">Settings -&gt; Customizations</code>)
+        <ul>
+          <li>Icon pack support</li>
+          <li>UI color adjustment</li>
+          <li>Smaller icon size options</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Wallpaper option in Settings has been moved into Customizations menu.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Various stability fixes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-17-2023-12-11">Version 1.7 (2023-12-11):</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Contact search:
+        <ul>
+          <li>You can access its settings under <code class="language-plaintext highlighter-rouge">Settings -&gt; Contact Search</code>.</li>
+        </ul>
+      </li>
+      <li>App &amp; contact alias:
+        <ul>
+          <li>You can access it in apps/contacts’ info menu(long press menu).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Scribble search now queries against words in app/contact’s name.</li>
+      <li>Updated user manual, now with GIFs! <em>(They are animated webp actually.)</em>
+</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where scribble with pointer devices other than touch causing unexpected behaviors and crashing.</li>
+      <li>Various stability fixes.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix3-2023-11-21">Version 1.6-fix3 (2023-11-21):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed an issue where notification dot will crash the launcher in some condition.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix2-2023-11-19">Version 1.6-fix2 (2023-11-19):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed various app crashing problems (hopefully), these include:
+        <ul>
+          <li>Crash when widget list failed to fetch app names.</li>
+          <li>Crash when failed to launch an app or its app info’s activity.</li>
+          <li>Crash when using the app visibility button popup.</li>
+          <li>Crash when opening up this launcher.</li>
+        </ul>
+      </li>
+      <li>Fixed launching app shortcut didn’t get counted to usage.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-fix1-2023-11-16">Version 1.6-fix1 (2023-11-16):</h3>
+
+<ul>
+  <li>Bug Fixes
+    <ul>
+      <li>Fixed app info menu not closing after opening an app shortcut.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-16-2023-11-06">Version 1.6 (2023-11-06)</h3>
+
+<ul>
+  <li>New Features
+    <ul>
+      <li>Widget support:
+        <ul>
+          <li>Swipe to the left or right in Home Screen to access the new widget space.</li>
+          <li>You can access widget related settings under <code class="language-plaintext highlighter-rouge">Settings -&gt; Widget</code>.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Bug Fixes
+    <ul>
+      <li>App List now fills up the screen properly on wide screen devices.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-15-fix1-2023-10-20">Version 1.5-fix1 (2023-10-20)</h3>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where some notifications can crash the launcher.</li>
+      <li>Fixed faulty home button detection implementation.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-15-2023-10-17">Version 1.5 (2023-10-17)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Media Control in the top panel. (Enable this feature in <code class="language-plaintext highlighter-rouge">Settings -&gt; Media Control</code>)</li>
+      <li>More fine-grained app hiding, see <code class="language-plaintext highlighter-rouge">Settings -&gt; User Manual -&gt; Hiding App</code> for more detail.</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Quick Launch area will now show an arrow when it’s empty.</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fixed an issue where notification dot not being updated properly.</li>
+    </ul>
+  </li>
+  <li>New Bugs:
+    <ul>
+      <li>In the top panel, right after swiping, clicks will sometimes only response after a few more clicks.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-14-2023-09-27">Version 1.4 (2023-09-27)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Update changelog dialog</li>
+      <li>Notification dot &amp; app notification in app info menu (Enable them in “Settings” -&gt; “Notification Dot”)</li>
+      <li>Hiding apps from suggestions</li>
+      <li>Improved onboarding experience</li>
+      <li>Added Korean handwriting support</li>
+    </ul>
+  </li>
+  <li>Changes:
+    <ul>
+      <li>Quick Launch Area’s icons will now adjust their position base on the icon amount.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-13-2023-09-16">Version 1.3 (2023-09-16)</h3>
+
+<ul>
+  <li>New Features:
+    <ul>
+      <li>Analog clock.</li>
+    </ul>
+  </li>
+  <li>Improvements:
+    <ul>
+      <li>Handwriting should be more responsive on mid-end &amp; low-end devices.</li>
+      <li>More adaptive screen layout, UI elements won’t get covered on shorter screen anymore.</li>
+      <li>Backend algorithm improvement, app searching should be much faster and less resource intensive.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="version-12-fix1-2023-08-12">Version 1.2-fix1 (2023-08-12)</h3>
+
+<ul>
+  <li>Fixed a usage collection issue.</li>
+</ul>
+
+<h3 id="version-12-2023-08-11">Version 1.2 (2023-08-11)</h3>
+
+<ul>
+  <li>Rewrote suggestion algorithm.</li>
+  <li>Redesigned app info menu.</li>
+  <li>Added access to app shortcuts.</li>
+  <li>Thicken the font for better visibility.</li>
+  <li>Fixed navigation, status bar and other icons not display correctly when system is using light mode.</li>
+</ul>
+
+<h3 id="version-11-fix1-2023-08-06">Version 1.1-fix1 (2023-08-06)</h3>
+
+<ul>
+  <li>Fixing the crashing issue.</li>
+</ul>
+
+<h3 id="version-11-2023-07-29">Version 1.1 (2023-07-29)</h3>
+
+<ul>
+  <li>Fixed some layout issues.</li>
+  <li>Attempted to fix the crashing issue.</li>
+</ul>
+
+<h3 id="version-10-2023-07-14">Version 1.0 (2023-07-14)</h3>
+
+<ul>
+  <li>Initial release.</li>
+</ul>
+
+<hr>
+
+<ul>
+  <li><a href="/legal/rez/privacy.html">Privacy Policy</a></li>
+  <li><a href="/legal/rez/terms.html">Terms &amp; Conditions</a></li>
+</ul>
+
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+<script type="text/javascript">kofiwidget2.init('Support Development', '#29abe0', 'R6R6RZZ2S');kofiwidget2.draw();</script>
+
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<span></span><span></span>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        </ul>
+    </div>
+<div class="post-comments">  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://www.perryoncrack.me/apps/rez';
+      this.page.identifier = 'https://www.perryoncrack.me/apps/rez';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://perryoncrack-main.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+</div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Copyright © 2020-2025 perryOnCrack</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://www.perryoncrack.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.perryoncrack.me/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-09-27T14:20:02+00:00</updated><id>https://www.perryoncrack.me/feed.xml</id><title type="html">perryOnCrack’s Devlog &amp;amp; Photos</title><subtitle>perryOnCrack&apos;s personal website | Devlog | Photo Portfolio</subtitle><author><name>perryOnCrack</name></author><entry><title type="html">Project Update on ReZ Launcher</title><link href="https://www.perryoncrack.me/devlog/2024/03/26/ReZ-Launcher-beta.html" rel="alternate" type="text/html" title="Project Update on ReZ Launcher" /><published>2024-03-26T13:00:00+00:00</published><updated>2024-03-26T13:00:00+00:00</updated><id>https://www.perryoncrack.me/devlog/2024/03/26/ReZ-Launcher-beta</id><content type="html" xml:base="https://www.perryoncrack.me/devlog/2024/03/26/ReZ-Launcher-beta.html"><![CDATA[<p>It’s been 2 months since I release an update to ReZ Launcher, some of you might wonder where have I been &amp; is this project going to be abandoned just like the old one?</p>
+
+<p>The truth is, I was that “unemployed friend at 3 am” before this January, it’s the reason why I can pump out feature after feature until Version 1.9. And partially thanks to this project, I got an Android developer position and started working since mid January.</p>
+
+<p>The sad thing about being employed though is that now your time becomes your employer’s, so I don’t get much of it left to work on ReZ except weekends, and sometimes even in weekends I don’t even got the time because other more important things came out of nowhere.</p>
+
+<h2 id="whats-the-future-of-rez-launcher">What’s the future of ReZ Launcher?</h2>
+
+<p>The development is still going, just going to be really, really slow. Because of this, I’ve planned two things that might help keeping this launcher afloat in the future:</p>
+
+<h3 id="1-open-beta">1. Open Beta</h3>
+
+<p>Starting today, I’m opening up beta testing for ReZ Launcher. This is for some of you that can’t wait to try out the new features and are not afraid of the risk. The beta version will be the development progress I’ve done so far at the time of release. And It won’t be as stable as the release version.</p>
+
+<p>Ideally I would like to release a new beta version biweekly, basically a more frequent but unstable update. But it’s hard to say what might happen, so I’ll see if I can manage.</p>
+
+<p>Starting today, you can go to the <a href="/rez">Play Store page</a> and register to become a beta tester.</p>
+
+<h3 id="2-open-source">2. Open Source</h3>
+
+<p>Later down the road, I plan to make ReZ Launcher open source, let the community helps with development.</p>
+
+<p>But don’t expect it to come any time soon, I still got a lot of planning to do before open sourcing it, I don’t want to just throw the source code out and call it a day, I want guidelines in-place &amp; I want the code to be workable by others before I hand it out to the public.</p>
+
+<p>So I’ll say it again: DON’T expect it to come any time soon.</p>
+
+<hr />
+
+<p>That’s all I have to say for now, hope you all have a wonderful day.</p>
+
+<hr />
+
+<p><sup><sup><em>Funny things about this job I’ve got, they knew my whole shtick was in Compose and they are still using XML &amp; Java 8, I still got hired. Furthermore, I don’t think they even have the resource to switch to Kotlin &amp; Compose any time soon. So to this day I’m still confused why was I hired…</em></sup></sup></p>]]></content><author><name>perryOnCrack</name></author><category term="DevLog" /><category term="android" /><category term="devlog" /><summary type="html"><![CDATA[It’s been 2 months since I release an update to ReZ Launcher, some of you might wonder where have I been &amp; is this project going to be abandoned just like the old one?]]></summary></entry><entry><title type="html">Installing Linux on Acer Switch 10E (SW3-016)</title><link href="https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html" rel="alternate" type="text/html" title="Installing Linux on Acer Switch 10E (SW3-016)" /><published>2023-10-02T13:00:00+00:00</published><updated>2023-10-02T13:00:00+00:00</updated><id>https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E</id><content type="html" xml:base="https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html"><![CDATA[<p><em>(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)</em></p>
+
+<p>I bought this convertible second-handed in my freshman year in university, it was one of the worst device I ever used, but it was always a secondary device for me so I just keeping it and used it from time to time.</p>
+
+<p>At that time I was still using Windows in all of my PCs but I was beginning to try out Linux. This was the first device I changed to Linux completely. I was using Kubuntu at that time, and it served me well through the uni, I even wrote most of the code of my graduation project with this nugget.</p>
+
+<p>As of last week, it had been sit on my shelf for about 2 years because of 2 things:</p>
+<ul>
+  <li>The keyboard was broken and I didn’t bother to get it fixed.</li>
+  <li>A weird bug happened when I was distro hopping: the wifi stopped working all together.</li>
+</ul>
+
+<p>The original plan was to somehow make it tablet only, make a shell to hold the keyboard’s PCB(there’s a usb port on it), and stick a hub on the back with one of those nano sized usb wifi adapter.</p>
+
+<p>I installed Manjaro on it but later never bother to finish the project.</p>
+
+<p>Until last week, I picked up this almost abandon project. And I started by designing &amp; printing the shell using FreeCAD.</p>
+
+<p><img src="/assets/images/posts/2023-10-02-Acer-Switch-10-E/minimized-dock.jpg" alt="" width="500" height="auto" /></p>
+
+<p>The shell was the easy part unfortunately…</p>
+
+<h2 id="first-problem-wheres-the-battery-indicator">First Problem: Where’s the battery indicator?</h2>
+
+<p>I was trying out EndeavourOS with this device but I noticed the battery indicator was missing, I thought it was EndeavourOS’s problem so switched to pure Arch(took me a while) and later switched back to Manjaro, but the problem persisted.</p>
+
+<p>After some trial and error and installing stuff here &amp; there, turn’s out is cause by the Linux kernel 6.5. This kernel version for some reason can’t properly read the battery from the ACPI tables.</p>
+
+<p><strong>Switching to 6.4 or older version fixed the problem.</strong></p>
+
+<h2 id="second-problem-touch-control-on-kde-plasma-x11-sucks">Second Problem: Touch Control on KDE Plasma (X11) SUCKS</h2>
+
+<p>During the trial and error, using the device without a mouse and keyboard was real pain. Dragging icons didn’t work 90% of the time and felt janky through and through, touch input won’t register in context menu &amp; lack of on screen keyboard.</p>
+
+<p>Even after installed <a href="https://launchpad.net/onboard">OnBoard</a>, the experience still sucks but suck less.</p>
+
+<p>So, how do I solved this issue? <strong>Switching to Wayland!</strong></p>
+
+<p>To my surprise, Plasma on Wayland has improved a lot since the last time I’ve tried it, and it handle touch input like a champ, no more janks dragging across the screen.</p>
+
+<p>As for the on screen keyboard, OnBoard doesn’t support Wayland but I found <a href="https://github.com/maliit/keyboard">Maliit</a>, and what’s better it’s that Maliit support Chinese input which I still need from time to time.</p>
+
+<p>Setting up Maliit took me some trials, but I got it in the end. Here’s a rough walkthrough:</p>
+
+<ol>
+  <li>Install <code class="language-plaintext highlighter-rouge">maliit-framework</code> &amp; <code class="language-plaintext highlighter-rouge">maliit-keyboard</code> and <code class="language-plaintext highlighter-rouge">libchewing</code> or <code class="language-plaintext highlighter-rouge">libpinyin</code> depend on your need.</li>
+  <li>Make sure <code class="language-plaintext highlighter-rouge">~/.config/kwinrc</code> has these config set:
+    <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ...
+ [<span class="n">Wayland</span>]
+ <span class="n">VirtualKeyboardEnabled</span>=<span class="n">true</span>
+ ...
+ [<span class="n">XWayland</span>]
+ <span class="n">VirtualKeyboardEnabled</span>=<span class="n">true</span>
+
+</code></pre></div>    </div>
+  </li>
+  <li>Enable virtual keyboard in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Input Device</code> -&gt; <code class="language-plaintext highlighter-rouge">Virtual Keyboard</code> and select <code class="language-plaintext highlighter-rouge">Maliit</code>.</li>
+  <li>Enable Chinese input through <code class="language-plaintext highlighter-rouge">gsettings</code>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># Set the keyboard language to English &amp; Chewing.</span>
+ <span class="nv">$ </span>gsettings <span class="nb">set </span>org.maliit.keyboard.maliit enabled-languages <span class="s2">"['en', 'zh-hant']"</span>
+
+ <span class="c"># Set the keyboard language to English &amp; Pinyin.</span>
+ <span class="nv">$ </span>gsettings <span class="nb">set </span>org.maliit.keyboard.maliit enabled-languages <span class="s2">"['en', 'zh-hans']"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="last-problem-the-bugged-out-on-board-wifi">Last Problem: The Bugged Out On Board WiFi</h2>
+
+<p>I stumbled upon this <a href="https://hansdegoede.livejournal.com/24132.html">blog post</a> written by hansdegoede when I was looking for solution for the battery indicator issue, it turns out that wifi problem is caused by the shitty &amp; weird BIOS implementation.</p>
+
+<p>In short, the BIOS changes its DSDT on the fly using the boot loader efi it recognized, and the SD card reader’s controller’s DSDT entries are set to invalid values <em>(because why the hell not?)</em>, and causing the wifi card to be offline because it is connect through the controller.</p>
+
+<p>Instead of using the blog post’s solution (which I can’t reproduce), I use another mechanism of Linux, <strong>ACPI table override</strong>.</p>
+
+<p>Here’s a rough walkthrough with the help of this <a href="https://wiki.archlinux.org/title/DSDT">Arch Wiki article</a>:</p>
+
+<ol>
+  <li>Tools preparation: install <code class="language-plaintext highlighter-rouge">acpica</code> &amp; <code class="language-plaintext highlighter-rouge">cpio</code></li>
+  <li>Dump &amp; decompile the table
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># Dump DSDT</span>
+ <span class="nv">$ </span><span class="nb">sudo cat</span> /sys/firmware/acpi/tables/DSDT <span class="o">&gt;</span> dsdt.aml
+
+ <span class="c"># Decompile the dsdt's aml to dsl, this will produce dsdt.dsl</span>
+ <span class="nv">$ </span>iasl <span class="nt">-d</span> dsdt.aml
+</code></pre></div>    </div>
+  </li>
+  <li>Modify the dsl
+    <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">...</span>
+ <span class="n">DefinitionBlock</span> <span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="s">"DSDT"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"ACRSYS"</span><span class="p">,</span> <span class="s">"ACRPRDCT"</span><span class="p">,</span> <span class="mh">0x00000003</span><span class="p">)</span>
+ <span class="c1">//                                                    ^^^^^^^^^^ --&gt; Increase the last value.</span>
+ <span class="p">...</span>
+         <span class="n">Device</span> <span class="p">(</span><span class="n">SDHB</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WADR</span><span class="p">,</span> <span class="n">Zero</span><span class="p">)</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WHID</span><span class="p">,</span> <span class="s">"80860F14"</span><span class="p">)</span> <span class="c1">// --&gt; Change to "Name (_HID, "80860F14")"</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">AHID</span><span class="p">,</span> <span class="s">"INT33BB"</span><span class="p">)</span>
+ <span class="p">...</span>
+         <span class="n">Device</span> <span class="p">(</span><span class="n">SDHC</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WHID</span><span class="p">,</span> <span class="s">"80860F14"</span><span class="p">)</span> <span class="c1">// --&gt; Change to "Name (_HID, "80860F14")"</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">AHID</span><span class="p">,</span> <span class="s">"INT33BB"</span><span class="p">)</span>
+ <span class="p">...</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Recompile, package &amp; put it into place
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># Compile to aml.</span>
+ <span class="nv">$ </span>iasl <span class="nt">-tc</span> dsdt.dsl
+
+ <span class="c"># Package it (done loacally in your working directory.)</span>
+ <span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> kernel/firmware/acpi
+ <span class="nv">$ </span><span class="nb">cp </span>dsdt.aml kernel/firmware/acpi
+ <span class="nv">$ </span>find kernel | cpio <span class="nt">-H</span> newc <span class="nt">--create</span> <span class="o">&gt;</span> acpi_override
+
+ <span class="c"># Put into place.</span>
+ <span class="nv">$ </span><span class="nb">sudo cp </span>acpi_override /boot
+</code></pre></div>    </div>
+  </li>
+  <li>Set up bootloader, I’m using GRUB
+    <ol>
+      <li>Edit <code class="language-plaintext highlighter-rouge">/etc/default/grub</code>
+        <div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c"># Add this line
+</span> <span class="n">GRUB_EARLY_INITRD_LINUX_CUSTOM</span>=<span class="s2">"acpi_override"</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Update grub config
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span><span class="nb">sudo </span>update-grub
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>Reboot</li>
+</ol>
+
+<p>After that the wifi card should be in working order.</p>
+
+<hr />
+
+<p>That’s all the major problem I’ve encountered so far. I might update more once I found more issue. Until then, I hope this will help someone with the same problems.</p>]]></content><author><name>perryOnCrack</name></author><category term="Linux" /><category term="linux" /><category term="blog" /><summary type="html"><![CDATA[(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)]]></summary></entry><entry><title type="html">New App &amp;amp; What’s Wrong With It: ReZ Launcher</title><link href="https://www.perryoncrack.me/devlog/2023/09/16/New-App-ReZ-Launcher.html" rel="alternate" type="text/html" title="New App &amp;amp; What’s Wrong With It: ReZ Launcher" /><published>2023-09-16T13:00:00+00:00</published><updated>2023-09-16T13:00:00+00:00</updated><id>https://www.perryoncrack.me/devlog/2023/09/16/New-App-ReZ-Launcher</id><content type="html" xml:base="https://www.perryoncrack.me/devlog/2023/09/16/New-App-ReZ-Launcher.html"><![CDATA[<p><em>(This post should be up in July, but my stupid a** decide to rush the app cause too much issues at launch so here it is.)</em></p>
+
+<p>Once upon a time there’s a small Swedish company call Nokia, they release a tablet called N1, in it there’s a really special launcher call Z Launcher.</p>
+
+<p>Not long after the release of the tablet, the launcher got a standalone release on the Play Store and highschool kid tried it and fell in love with it.</p>
+
+<p>But tragedy struck, the launcher soon fell out of support by that small Swedish company and stopped getting updates. And soon enough, it got pulled out of the store, but the app still worked well and the kid still using it nonetheless.</p>
+
+<p>An ick started to grow as the Android version grew, a popup appeared saying <code class="language-plaintext highlighter-rouge">The app might not work properly because it's made for older version of Android</code>  every time the kid installed it on a new device. The app still works, but the dread of it become unusable someday grew daily and the kid grew a will that someday he’ll write he’s own Z Launcher.</p>
+
+<p>As of today, the kid got the mean and build the dream Android launcher of his on his own.</p>
+
+<hr />
+
+<p>Ok that’s some corny story I just told you and that kid in the story is, you guessed it, yours truly.</p>
+
+<p>To the main topic…</p>
+
+<h2 id="whats-this-app">What’s this app?</h2>
+
+<p>My recreation of Nokia’s Z Launcher that is built using Jetpack Compose and Google ML Kit Digital Ink with <del>some</del> one of the more modern features.</p>
+
+<p>If you don’t know what Z Launcher is, here’s a short feature summary of it:</p>
+
+<ul>
+  <li>Scribble to search app.</li>
+  <li>Automatically shows apps that are most likely to be used.</li>
+  <li>Minimalistic design.</li>
+</ul>
+
+<p>My main goal of this project is to recreate these core features using Compose and other libraries.</p>
+
+<h2 id="what-i-built-so-far">What I built so far…</h2>
+
+<p>The core features mention above are built, and I also added app shortcut feature which was not a thing when Z Launcher released.</p>
+
+<p>I released the app back in mid-July, but things didn’t go smoothly…</p>
+
+<h2 id="what-went-wrong">What went wrong?</h2>
+
+<p>A lots of thing went wrong:</p>
+
+<ul>
+  <li>The first iteration of the scribble in Compose was a huge mess, the performance was bad and the code were all over the place.</li>
+  <li>The layout was badly layed out, and locked to portrait mode only.</li>
+  <li>The logic on suggesting apps was too computational intense because of the data structure I used.</li>
+  <li>The original usage collection database table was not thought out at all (rewrote it at version 1.2.)</li>
+  <li>The constant app crashing because I used a number of bad key value on <code class="language-plaintext highlighter-rouge">LazyListScope</code>’s <code class="language-plaintext highlighter-rouge">item{}</code> (Fixed in version 1.1-fix1.)</li>
+</ul>
+
+<h2 id="what-now">What now?</h2>
+
+<p>Fortunately, I spent the last a week refactored and rewritten a whole bunch of components to fixed all the above unsolved problems, and released version 1.3.</p>
+
+<p>As for now, I might just have some time to work on the missing features that were seen on Z Launcher that I haven’t implemented yet.</p>
+
+<p>Go to this <a href="/apps/rez">link</a> if you are interested on what features I’ve planned &amp; the changlogs.</p>
+
+<p>And the <a href="/rez">Play Store link</a> if you want to try out the launcher.</p>
+
+<hr />
+
+<p>See you in the next post!</p>]]></content><author><name>perryOnCrack</name></author><category term="DevLog" /><category term="android" /><category term="devlog" /><summary type="html"><![CDATA[(This post should be up in July, but my stupid a** decide to rush the app cause too much issues at launch so here it is.)]]></summary></entry><entry><title type="html">New App Release: poc’s Film Tracker</title><link href="https://www.perryoncrack.me/devlog/2023/06/23/New-App-pocs-Film-Tracker.html" rel="alternate" type="text/html" title="New App Release: poc’s Film Tracker" /><published>2023-06-23T04:00:00+00:00</published><updated>2023-06-23T04:00:00+00:00</updated><id>https://www.perryoncrack.me/devlog/2023/06/23/New-App-pocs-Film-Tracker</id><content type="html" xml:base="https://www.perryoncrack.me/devlog/2023/06/23/New-App-pocs-Film-Tracker.html"><![CDATA[<p><a href="https://play.google.com/store/apps/details?id=com.perryoncrack.filmtracker"><img src="/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/banner2.png" alt="" /></a></p>
+
+<p>This is the app I’ve been working on for the past 3 months and now it’s ready to be released.</p>
+
+<h2 id="whats-this-app">What’s this app?</h2>
+
+<p>It’s inventory management app for keeping track on user’s film roll stocking and usage, mainly for helping anyone who is into film photography and want to some of the metadata.</p>
+
+<h2 id="main-features">Main Features</h2>
+
+<ul>
+  <li>Inventory system-like interface to manage your piles of films.</li>
+  <li>Taking note on each roll of films.</li>
+  <li>Record the spec of a film and easily find them when needed.</li>
+  <li>Record your usage data.</li>
+  <li>Take note on the camera used, start date, finish date &amp; develop date.</li>
+  <li>Quick access from main page to all your currently using films.</li>
+  <li>Bags feature allows you to make any arbitrary grouping of your films.</li>
+  <li>Search feature for… search your inventory.</li>
+  <li>Built-in user guide written by yours truly.</li>
+</ul>
+
+<h2 id="screenshots">Screenshots</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>![Main Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-01.png){: width="320" : height="auto"}</td>
+      <td>![Inventory Screen](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-02.png){: width="320" : height="auto"}</td>
+    </tr>
+    <tr>
+      <td>![Search](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-03.png){: width="320" : height="auto"}</td>
+      <td>![Use Film Dialog](/assets/images/posts/2023-06-22-New-App-pocs-Film-Tracker/phone-04.png){: width="320" : height="auto"}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="planned-features">Planned Features</h2>
+
+<ul>
+  <li>More theme color schemes.</li>
+  <li>Widget &amp; notification.</li>
+  <li>User guide in Traditional Chinese.</li>
+</ul>]]></content><author><name>perryOnCrack</name></author><category term="DevLog" /><category term="android" /><category term="devlog" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">What I’ve Been Doing In The Past Year</title><link href="https://www.perryoncrack.me/update/2023/06/21/Personal-Update.html" rel="alternate" type="text/html" title="What I’ve Been Doing In The Past Year" /><published>2023-06-21T04:00:00+00:00</published><updated>2023-06-21T04:00:00+00:00</updated><id>https://www.perryoncrack.me/update/2023/06/21/Personal-Update</id><content type="html" xml:base="https://www.perryoncrack.me/update/2023/06/21/Personal-Update.html"><![CDATA[<h3 id="when-you-were-a-graduated-and-get-in-to-a-job-you-dont-like-and-decided-quit-after-just-6-months-what-do-you-do-next">When you were a graduated and get in to a job you don’t like and decided quit after just 6 months, what do you do next?</h3>
+
+<p>Find a new job immediately? Spend another 6 months in your new hobby? Or learn some new skills? I definitely didn’t do one of them 🫣</p>
+
+<hr />
+
+<p>So what exactly I’ve been doing?</p>
+
+<h3 id="first-thing-i-did-i-learned-a-lot-about-3d-printing">First thing I did: I learned a lot about 3D Printing.</h3>
+
+<p>I always want a 3D printer since I was a freshman in university. It’s a fascinating concept to me that you can just build stuff out of a 3D model.</p>
+
+<p>So I bought a 3D printer, an Ender 3 S1 Pro to be exact, a month before I quit my job last year, thinking it would be fun just print and print and print…</p>
+
+<p>But no, it’s a frustrating machine to work with and has a heap of problems coming from the factory:</p>
+
+<ul>
+  <li>The aluminum build plate is warped like crazy coming from factory.</li>
+  <li>Creality knew the problem so they included CRTouch to the model, BUT the stock firmware sucks and couldn’t even store and use the bed mesh properly.</li>
+  <li>Also, the stock firmware’s bed leveling sequence is confusing and did’t work at all.</li>
+  <li>The spring steel PEI plate won’t stick anymore after just a few use.</li>
+  <li>The stock cooling fan for the nozzle is not even close to adequate.</li>
+  <li>Extrude aluminum and v-wheels are not a great design anymore by today’s standard.</li>
+</ul>
+
+<p>So for the next 6 months I’ve been fixing the problem it had, learning a lot of 3D printed tips &amp; tricks and printing a lot of stuff and even designed some stuff along the way.</p>
+
+<p>You can check out my <a href="https://www.printables.com/@perryOnCrack">Printable profile</a>, there might be something you might be interested.</p>
+
+<h3 id="second-thing-android-development">Second thing: Android development.</h3>
+
+<p>One of the things I think I can do for my career path before quitting the job is doing Android development.</p>
+
+<p>I have a little experience in these from the time in the university, it’s a course I took and I even go beyond the course to put the final, the <a href="https://play.google.com/store/apps/details?id=com.perryoncrack.mcfleshlite">Morse Code Torch</a>, on the Play Store. It didn’t do very well on the store but I didn’t do any advertisement and it still got over 100 downloads somehow.</p>
+
+<p>I do have some app idea I want to make but I was too focus on 3D printing at the time, so I only started to look into this until November.</p>
+
+<p>I started with the poc’s Toolbox project but it didn’t go anywhere. At then I was still using the old XML way of designing UI so it took a really long time for just one screen. I was also trying to learn how to use Fragment and use on the project, but learning it got me too frustrated and the code just becomes too unnecessarily complicated. I shelved the project not long after.</p>
+
+<p>In mid-December, I dug out the Morse Code Torch project folder and decide to give it a overhaul. I converted it from Java to Kotlin and after that… I bailed again? Looking at its Git log right now, I finished converting in mid-January and the next git commit is March 3rd, and within a few day the overhaul was done, and later the hotfix was pushed out.</p>
+
+<p>Anyway… After the update was pushed out, I was dead set I need to get my act together and start doing something productive. I had the idea &amp; some drawing lay down for the next project, poc’s Film Tracker, and I set my goal to learn Jetpack Compose this time. I go through some of the beginner course Google made to get familiar with the framework, and off to work on the project.</p>
+
+<p>It’s frustrating in the beginning: What’s a Composable? How the is TextField work? What is state hoisting? But after a while I start to understand things and it become clear, designing UI on Compose is way way way easier than XML and it forces you to use MVVM which is a good thing.</p>
+
+<p>In XML way, in the code you have to inflate the View, find the view, and read from or modify it when needed and write all the other logic in the same code, which clogs up really quick.</p>
+
+<p>Now with Compose, doing thing the MVVM way is enforced by design essentially: now the View only display the state it wants to present and send actions to the ViewModel, View doesn’t hold state anymore and things get separated which means cleaner code and tidier workspace.</p>
+
+<p>And for the next 3 and a half months, I just working on the project. (Although I took 2 weeks off and design and printed a camera body…) Learning how to organize the project files, learning the different libraries Jetpack provides, learning the frustration others have with the framework online… etc. And just yesterday, the project is ready for release!</p>
+
+<p>This is probably the fastest 3 months I’ve been so far. Everyday I woke up, turn on my PC, went for breakfast, and back to working this project until night. And time just went by and I finished the project! How crazy is that!? There’re several times I got too frustrated on something and didn’t know how to solve and the progress staggered but I overcome each of them eventually.</p>
+
+<p>I might take a few days off for now, or just start the next project which I won’t tell what it is just now. And I’ll make a post about the new app and the roadmap I have for it in the next few day.</p>
+
+<p>See ya, whoever is reading my rambling ✌️</p>]]></content><author><name>perryOnCrack</name></author><category term="Update" /><category term="personal update" /><summary type="html"><![CDATA[When you were a graduated and get in to a job you don’t like and decided quit after just 6 months, what do you do next?]]></summary></entry><entry><title type="html">New Update for Morse Code Torch!!</title><link href="https://www.perryoncrack.me/devlog/2023/03/04/Morse-Code-Torch-update.html" rel="alternate" type="text/html" title="New Update for Morse Code Torch!!" /><published>2023-03-04T14:00:00+00:00</published><updated>2023-03-04T14:00:00+00:00</updated><id>https://www.perryoncrack.me/devlog/2023/03/04/Morse-Code-Torch-update</id><content type="html" xml:base="https://www.perryoncrack.me/devlog/2023/03/04/Morse-Code-Torch-update.html"><![CDATA[<p>After almost 3 years of abandonment of this little app I wrote as an assignment of a course I took, a new update is on its way to the Play Store in a few days.</p>
+
+<p><strong>This update will be the 1.0 release!!!</strong></p>
+
+<h3 id="2-major-changes-in-this-update">2 major changes in this update:</h3>
+
+<ol>
+  <li>
+    <p><strong>UI refresh</strong>:</p>
+
+    <p>This update replace the original old &amp; ugly UI with the new Material Me design language (though the color scheme won’t be tied to your system’s) and clean up the original messiness. The UI should be more clean and not so clogged up like the old one.</p>
+
+    <p>Here’s a sneak peak:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>QCode hidden</th>
+          <th>QCode expanded</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>![](/assets/images/posts/2023-03-04-Morse-Code-Torch-update/screen.png){: width="320" }</td>
+          <td>![](/assets/images/posts/2023-03-04-Morse-Code-Torch-update/screen2.png){: width="320" }</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p><strong>Backend upgrade</strong>:</p>
+
+    <p>I converted the code to Kotlin &amp; refactored the most of them in this update, though performance should be the same as before.</p>
+  </li>
+</ol>
+
+<h3 id="some-minor-changes">Some minor changes:</h3>
+
+<ul>
+  <li>
+    <p>Target API level changed from 29 to 33, minimum is still 23.</p>
+  </li>
+  <li>
+    <p>That’s it, nothing more.</p>
+  </li>
+</ul>]]></content><author><name>perryOnCrack</name></author><category term="DevLog" /><category term="android" /><category term="devlog" /><category term="update" /><summary type="html"><![CDATA[After almost 3 years of abandonment of this little app I wrote as an assignment of a course I took, a new update is on its way to the Play Store in a few days.]]></summary></entry><entry><title type="html">Helios-44M-4</title><link href="https://www.perryoncrack.me/photography/2021/09/03/Playing-with-Helios-44M-4.html" rel="alternate" type="text/html" title="Helios-44M-4" /><published>2021-09-03T15:50:00+00:00</published><updated>2021-09-03T15:50:00+00:00</updated><id>https://www.perryoncrack.me/photography/2021/09/03/Playing-with-Helios-44M-4</id><content type="html" xml:base="https://www.perryoncrack.me/photography/2021/09/03/Playing-with-Helios-44M-4.html"><![CDATA[<p>I took more shots with this lens again this afternoon.</p>
+
+<p>With this lovely amber yellow almost-sunset lighting, plus this series of lens’ party trick: spiral bokeh.</p>
+
+<p><img src="/assets/images/posts/2021-09-03-Playing-with-Helios-44M-4/1010042_sRGB.jpg" alt="" /></p>
+
+<p><img src="/assets/images/posts/2021-09-03-Playing-with-Helios-44M-4/1010045_sRGB.jpg" alt="" /></p>
+
+<p><img src="/assets/images/posts/2021-09-03-Playing-with-Helios-44M-4/1010046_sRGB.jpg" alt="" /></p>]]></content><author><name>perryOnCrack</name></author><category term="Photography" /><category term="photography" /><category term="lenses" /><summary type="html"><![CDATA[I took more shots with this lens again this afternoon. With this lovely amber yellow almost-sunset lighting, plus this series of lens’ party trick: spiral bokeh.]]></summary></entry></feed>

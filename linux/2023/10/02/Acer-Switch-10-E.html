@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Installing Linux on Acer Switch 10E (SW3-016) | perryOnCrack’s Devlog &amp; Photos</title>
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="Installing Linux on Acer Switch 10E (SW3-016)">
+<meta name="author" content="perryOnCrack">
+<meta property="og:locale" content="en">
+<meta name="description" content="(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)">
+<meta property="og:description" content="(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)">
+<link rel="canonical" href="https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html">
+<meta property="og:url" content="https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html">
+<meta property="og:site_name" content="perryOnCrack’s Devlog &amp; Photos">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-10-02T13:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Installing Linux on Acer Switch 10E (SW3-016)">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"perryOnCrack"},"dateModified":"2023-10-02T13:00:00+00:00","datePublished":"2023-10-02T13:00:00+00:00","description":"(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)","headline":"Installing Linux on Acer Switch 10E (SW3-016)","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html"},"url":"https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://www.perryoncrack.me/feed.xml" title="perryOnCrack's Devlog &amp; Photos">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="perryOnCrack's Devlog &amp; Photos" src="" onerror="this.style.display='none'">
+  perryOnCrack's Devlog &amp; Photos
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/apps/rez">REZ LAUNCHER</a><a class="page-link" href="/photos/">PHOTOS</a><a class="page-link" href="/projects/">PROJECTS</a><a class="page-link" href="/about/">ABOUT</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('manual' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Installing Linux on Acer Switch 10E (SW3-016)</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2023-10-02T13:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-10-02
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 6 mins</span>
+  </p>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#linux">#linux</a><a class="post-tag" href="/tags.html#blog">#blog</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p><em>(This is not a full guide on how to install Manjaro on this system, it’s a documentation of the problems I encountered and how I solved it.)</em></p>
+
+<p>I bought this convertible second-handed in my freshman year in university, it was one of the worst device I ever used, but it was always a secondary device for me so I just keeping it and used it from time to time.</p>
+
+<p>At that time I was still using Windows in all of my PCs but I was beginning to try out Linux. This was the first device I changed to Linux completely. I was using Kubuntu at that time, and it served me well through the uni, I even wrote most of the code of my graduation project with this nugget.</p>
+
+<p>As of last week, it had been sit on my shelf for about 2 years because of 2 things:</p>
+<ul>
+  <li>The keyboard was broken and I didn’t bother to get it fixed.</li>
+  <li>A weird bug happened when I was distro hopping: the wifi stopped working all together.</li>
+</ul>
+
+<p>The original plan was to somehow make it tablet only, make a shell to hold the keyboard’s PCB(there’s a usb port on it), and stick a hub on the back with one of those nano sized usb wifi adapter.</p>
+
+<p>I installed Manjaro on it but later never bother to finish the project.</p>
+
+<p>Until last week, I picked up this almost abandon project. And I started by designing &amp; printing the shell using FreeCAD.</p>
+
+<p><img src="/assets/images/posts/2023-10-02-Acer-Switch-10-E/minimized-dock.jpg" alt="" width="500" height="auto"></p>
+
+<p>The shell was the easy part unfortunately…</p>
+
+<h2 id="first-problem-wheres-the-battery-indicator">First Problem: Where’s the battery indicator?</h2>
+
+<p>I was trying out EndeavourOS with this device but I noticed the battery indicator was missing, I thought it was EndeavourOS’s problem so switched to pure Arch(took me a while) and later switched back to Manjaro, but the problem persisted.</p>
+
+<p>After some trial and error and installing stuff here &amp; there, turn’s out is cause by the Linux kernel 6.5. This kernel version for some reason can’t properly read the battery from the ACPI tables.</p>
+
+<p><strong>Switching to 6.4 or older version fixed the problem.</strong></p>
+
+<h2 id="second-problem-touch-control-on-kde-plasma-x11-sucks">Second Problem: Touch Control on KDE Plasma (X11) SUCKS</h2>
+
+<p>During the trial and error, using the device without a mouse and keyboard was real pain. Dragging icons didn’t work 90% of the time and felt janky through and through, touch input won’t register in context menu &amp; lack of on screen keyboard.</p>
+
+<p>Even after installed <a href="https://launchpad.net/onboard">OnBoard</a>, the experience still sucks but suck less.</p>
+
+<p>So, how do I solved this issue? <strong>Switching to Wayland!</strong></p>
+
+<p>To my surprise, Plasma on Wayland has improved a lot since the last time I’ve tried it, and it handle touch input like a champ, no more janks dragging across the screen.</p>
+
+<p>As for the on screen keyboard, OnBoard doesn’t support Wayland but I found <a href="https://github.com/maliit/keyboard">Maliit</a>, and what’s better it’s that Maliit support Chinese input which I still need from time to time.</p>
+
+<p>Setting up Maliit took me some trials, but I got it in the end. Here’s a rough walkthrough:</p>
+
+<ol>
+  <li>Install <code class="language-plaintext highlighter-rouge">maliit-framework</code> &amp; <code class="language-plaintext highlighter-rouge">maliit-keyboard</code> and <code class="language-plaintext highlighter-rouge">libchewing</code> or <code class="language-plaintext highlighter-rouge">libpinyin</code> depend on your need.</li>
+  <li>Make sure <code class="language-plaintext highlighter-rouge">~/.config/kwinrc</code> has these config set:
+    <div class="language-conf highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> ...
+ [<span class="n">Wayland</span>]
+ <span class="n">VirtualKeyboardEnabled</span>=<span class="n">true</span>
+ ...
+ [<span class="n">XWayland</span>]
+ <span class="n">VirtualKeyboardEnabled</span>=<span class="n">true</span>
+
+</code></pre></div>    </div>
+  </li>
+  <li>Enable virtual keyboard in <code class="language-plaintext highlighter-rouge">Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Input Device</code> -&gt; <code class="language-plaintext highlighter-rouge">Virtual Keyboard</code> and select <code class="language-plaintext highlighter-rouge">Maliit</code>.</li>
+  <li>Enable Chinese input through <code class="language-plaintext highlighter-rouge">gsettings</code>:
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c"># Set the keyboard language to English &amp; Chewing.</span>
+ <span class="nv">$ </span>gsettings <span class="nb">set </span>org.maliit.keyboard.maliit enabled-languages <span class="s2">"['en', 'zh-hant']"</span>
+
+ <span class="c"># Set the keyboard language to English &amp; Pinyin.</span>
+ <span class="nv">$ </span>gsettings <span class="nb">set </span>org.maliit.keyboard.maliit enabled-languages <span class="s2">"['en', 'zh-hans']"</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="last-problem-the-bugged-out-on-board-wifi">Last Problem: The Bugged Out On Board WiFi</h2>
+
+<p>I stumbled upon this <a href="https://hansdegoede.livejournal.com/24132.html">blog post</a> written by hansdegoede when I was looking for solution for the battery indicator issue, it turns out that wifi problem is caused by the shitty &amp; weird BIOS implementation.</p>
+
+<p>In short, the BIOS changes its DSDT on the fly using the boot loader efi it recognized, and the SD card reader’s controller’s DSDT entries are set to invalid values <em>(because why the hell not?)</em>, and causing the wifi card to be offline because it is connect through the controller.</p>
+
+<p>Instead of using the blog post’s solution (which I can’t reproduce), I use another mechanism of Linux, <strong>ACPI table override</strong>.</p>
+
+<p>Here’s a rough walkthrough with the help of this <a href="https://wiki.archlinux.org/title/DSDT">Arch Wiki article</a>:</p>
+
+<ol>
+  <li>Tools preparation: install <code class="language-plaintext highlighter-rouge">acpica</code> &amp; <code class="language-plaintext highlighter-rouge">cpio</code>
+</li>
+  <li>Dump &amp; decompile the table
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c"># Dump DSDT</span>
+ <span class="nv">$ </span><span class="nb">sudo cat</span> /sys/firmware/acpi/tables/DSDT <span class="o">&gt;</span> dsdt.aml
+
+ <span class="c"># Decompile the dsdt's aml to dsl, this will produce dsdt.dsl</span>
+ <span class="nv">$ </span>iasl <span class="nt">-d</span> dsdt.aml
+</code></pre></div>    </div>
+  </li>
+  <li>Modify the dsl
+    <div class="language-c highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="p">...</span>
+ <span class="n">DefinitionBlock</span> <span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="s">"DSDT"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">"ACRSYS"</span><span class="p">,</span> <span class="s">"ACRPRDCT"</span><span class="p">,</span> <span class="mh">0x00000003</span><span class="p">)</span>
+ <span class="c1">//                                                    ^^^^^^^^^^ --&gt; Increase the last value.</span>
+ <span class="p">...</span>
+         <span class="n">Device</span> <span class="p">(</span><span class="n">SDHB</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WADR</span><span class="p">,</span> <span class="n">Zero</span><span class="p">)</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WHID</span><span class="p">,</span> <span class="s">"80860F14"</span><span class="p">)</span> <span class="c1">// --&gt; Change to "Name (_HID, "80860F14")"</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">AHID</span><span class="p">,</span> <span class="s">"INT33BB"</span><span class="p">)</span>
+ <span class="p">...</span>
+         <span class="n">Device</span> <span class="p">(</span><span class="n">SDHC</span><span class="p">)</span>
+         <span class="p">{</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">WHID</span><span class="p">,</span> <span class="s">"80860F14"</span><span class="p">)</span> <span class="c1">// --&gt; Change to "Name (_HID, "80860F14")"</span>
+             <span class="n">Name</span> <span class="p">(</span><span class="n">AHID</span><span class="p">,</span> <span class="s">"INT33BB"</span><span class="p">)</span>
+ <span class="p">...</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Recompile, package &amp; put it into place
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c"># Compile to aml.</span>
+ <span class="nv">$ </span>iasl <span class="nt">-tc</span> dsdt.dsl
+
+ <span class="c"># Package it (done loacally in your working directory.)</span>
+ <span class="nv">$ </span><span class="nb">mkdir</span> <span class="nt">-p</span> kernel/firmware/acpi
+ <span class="nv">$ </span><span class="nb">cp </span>dsdt.aml kernel/firmware/acpi
+ <span class="nv">$ </span>find kernel | cpio <span class="nt">-H</span> newc <span class="nt">--create</span> <span class="o">&gt;</span> acpi_override
+
+ <span class="c"># Put into place.</span>
+ <span class="nv">$ </span><span class="nb">sudo cp </span>acpi_override /boot
+</code></pre></div>    </div>
+  </li>
+  <li>Set up bootloader, I’m using GRUB
+    <ol>
+      <li>Edit <code class="language-plaintext highlighter-rouge">/etc/default/grub</code>
+        <div class="language-conf highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c"># Add this line
+</span> <span class="n">GRUB_EARLY_INITRD_LINUX_CUSTOM</span>=<span class="s2">"acpi_override"</span>
+</code></pre></div>        </div>
+      </li>
+      <li>Update grub config
+        <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nv">$ </span><span class="nb">sudo </span>update-grub
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li>Reboot</li>
+</ol>
+
+<p>After that the wifi card should be in working order.</p>
+
+<hr>
+
+<p>That’s all the major problem I’ve encountered so far. I might update more once I found more issue. Until then, I hope this will help someone with the same problems.</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/devlog/2023/09/16/New-App-ReZ-Launcher.html" title="New App &amp; What's Wrong With It: ReZ Launcher">New App &amp; What's Wrong With...</a><a class="next" href="/devlog/2024/03/26/ReZ-Launcher-beta.html" title="Project Update on ReZ Launcher">Project Update on ReZ Launcher</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/update/2023/06/21/Personal-Update.html" title="Project Update on ReZ Launcher">What I've Been Doing In The Past Year</a></li>
+<li><a class="post-link" href="/linux/2023/10/02/Acer-Switch-10-E.html" title="Project Update on ReZ Launcher">Installing Linux on Acer Switch 10E (SW3-016)</a></li>
+<li><a class="post-link" href="/devlog/2023/06/23/New-App-pocs-Film-Tracker.html" title="Project Update on ReZ Launcher">New App Release: poc's Film Tracker</a></li>
+<li><a class="post-link" href="/devlog/2023/09/16/New-App-ReZ-Launcher.html" title="Project Update on ReZ Launcher">New App &amp; What's Wrong With It: ReZ Launcher</a></li>
+</ul>
+    </div>
+<div class="post-comments">  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html';
+      this.page.identifier = 'https://www.perryoncrack.me/linux/2023/10/02/Acer-Switch-10-E.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://perryoncrack-main.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+</div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Copyright © 2020-2025 perryOnCrack</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
