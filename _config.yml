@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: perryOnCrack's Devlog & Photos
+title: perryOnCrack's Devlog
 email: perryoncrack@gmail.com
 author: perryOnCrack
 
@@ -43,7 +43,7 @@ author: perryOnCrack
 copyright: "Copyright © 2020-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  perryOnCrack's personal website | Devlog | Photo Portfolio
+  perryOnCrack's personal site | Devlog
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.perryoncrack.me" # the base hostname & protocol for your site, e.g. https://example.com
@@ -146,7 +146,6 @@ night_mode: "manual"
 # this and add the path to the pages in order as they should show up
 header_pages:
   - apps/rez.md
-  - photos.md
   - projects.md
   - about.md
 #  - index.html
@@ -156,8 +155,8 @@ header_pages:
 # Page default value
 defaults:
   home:
-    heading: "perryOnCrack's Devlog & Photos"
-    subheading: "Indie app developments & photography"
+    heading: "perryOnCrack's Devlog"
+    subheading: "Indie app developments and stuff."
 #    banner: "./assets/images/banner/cloud.jpg"
 
 # Banner default settings
