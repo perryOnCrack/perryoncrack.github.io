@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2025-09-27
+date: 2026-02-22
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -11,6 +11,10 @@ date: 2025-09-27
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
 ## Development Status
+
+### In Development
+
+- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 
 ### Planned features
 
@@ -27,7 +31,6 @@ date: 2025-09-27
     - Compact app item style
 - More notification style in app info menu
 - Other translation support
-- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
 - App list scrollbar
     - Waiting for the official Jetpack Compose implementation
 
