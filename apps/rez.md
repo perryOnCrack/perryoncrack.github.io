@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-02-22
+date: 2026-07-22
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,16 +14,20 @@ date: 2026-02-22
 
 ### In Development
 
-- Huge rewrite/refactor of the widget space (it's rotten spaghetti in there)
+- Setting menu refactor
+- Pinned shortcut
+- Hardware keyboard support
 
 ### Planned features
 
 - 中文拼音搜尋(拼音 & 注音)
-- Pinned shortcut
 - Weather on top panel
 
 ### Planned, But Not In Priority
 
+- Huge rewrite/refactor of the widget space
+    - It's rotten spaghetti in there.
+    - Made an attempt, didn't come out well enough.
 - More Customizations / UI styles
     - Clock customization
     - Home screen vertical placement adjustment
@@ -34,7 +38,7 @@ date: 2026-02-22
 - App list scrollbar
     - Waiting for the official Jetpack Compose implementation
 
-### User Suggested Features & Improvements (might not be implemented ever)
+### User Suggested Features & Improvements (might not be implemented)
 
 - Customizable font & font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
@@ -42,29 +46,24 @@ date: 2026-02-22
 - Extended alias management
 - Scribble area edge margin for swiping between pages 
 
-### Some ideas of mine (might not be implemented ever as well)
+### Some ideas of mine (might not be implemented as well)
 
-- Adjustment to the suggestion algorithm
-    - Maybe ML-based algorithm?
-- Foldable device screen layout
+- ML-based suggestion algorithm 
+- Special layout for foldable devices
 - Other transition animations
 - Fully customizable UI color
 - Predictive Back API support
 
-### Always be doing
+### Always doing
 
 - General code refactoring
-
-### Shelved
-
-- New Revised Customization UI
 
 ### Won't implement
 
 - Web search
 - Device file search
 - Google Now page
-- Typing search/search bar (kinda defeat the point of scribble search)
+- Software keyboard search/search bar (kinda defeat the point of scribble search)
 
 ### Known issues
 
@@ -85,10 +84,22 @@ date: 2026-02-22
 - Widget delete button is out of bound when the widget is filling the whole screen.
 - Contact list can't be retrieved in some devices.
 - Quick Launch can sometime bugged out when opening it.
+    - Should be fixed in the next release.
 
 ---
 
 ## Changelogs
+
+### Version 1.14 (TBD)
+
+- New Feature
+    - Pinned Shortcut support
+    - Hardware keyboard support
+
+- Changes
+    - Separate Task for setting menu
+        - Setting screen is its own task, you can now switching between setting menu and home screen freely.
+    - Screen rotation is now always unlocked on device with minimum screen width >= 600dp.
 
 ### Version 1.13 (2025-09-27)
 
