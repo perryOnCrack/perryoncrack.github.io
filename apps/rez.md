@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-07-22
+date: 2026-07-30
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -17,6 +17,10 @@ date: 2026-07-22
 - Setting menu refactor
 - Pinned shortcut
 - Hardware keyboard support
+- More Customizations
+    - Clock customization
+    - Fully customizable UI color
+    - Customizable font
 
 ### Planned features
 
@@ -29,12 +33,11 @@ date: 2026-07-22
     - It's rotten spaghetti in there.
     - Made an attempt, didn't come out well enough.
 - More Customizations / UI styles
-    - Clock customization
     - Home screen vertical placement adjustment
     - Z Launcher style scribble stroke
     - Compact app item style
 - More notification style in app info menu
-- Other translation support
+- App translation
 - App list scrollbar
     - Waiting for the official Jetpack Compose implementation
 
@@ -51,7 +54,6 @@ date: 2026-07-22
 - ML-based suggestion algorithm 
 - Special layout for foldable devices
 - Other transition animations
-- Fully customizable UI color
 - Predictive Back API support
 
 ### Always doing
