@@ -8,6 +8,8 @@ date: 2026-07-30
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
 
+{% include ko-fi-button.html %}
+
 **If you have any suggestions, you can contact me through my contact infos in the [about](/about) page.**
 
 ## Development Status
@@ -18,7 +20,7 @@ date: 2026-07-30
 - Pinned shortcut
 - Hardware keyboard support
 - More Customizations
-    - Clock customization
+    - Hide Analog Clock
     - Fully customizable UI color
     - Customizable font
 
@@ -94,7 +96,7 @@ date: 2026-07-30
 
 ### Version 1.14 (TBD)
 
-- New Feature
+- New Features
     - Pinned Shortcut support
     - Hardware keyboard support
 
@@ -102,6 +104,11 @@ date: 2026-07-30
     - Separate Task for setting menu
         - Setting screen is its own task, you can now switching between setting menu and home screen freely.
     - Screen rotation is now always unlocked on device with minimum screen width >= 600dp.
+
+- New Customizations
+    - Fully customizable UI color
+    - Material3 UI color
+    - Analog Clock Toggle *(some folks want this apparently)*
 
 ### Version 1.13 (2025-09-27)
 
@@ -451,5 +458,3 @@ date: 2026-07-30
 
 - [Privacy Policy](/legal/rez/privacy.html)
 - [Terms & Conditions](/legal/rez/terms.html)
-
-{% include ko-fi-button.html %}
