@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-07-30
+date: 2026-08-25
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,7 +14,7 @@ date: 2026-07-30
 
 ## Development Status
 
-### In Development
+## In Beta
 
 - Setting menu refactor
 - Pinned shortcut
@@ -33,19 +33,19 @@ date: 2026-07-30
 
 - Huge rewrite/refactor of the widget space
     - It's rotten spaghetti in there.
-    - Made an attempt, didn't come out well enough.
+    - Made an attempt, didn't come out well enough, might try it later.
 - More Customizations / UI styles
     - Home screen vertical placement adjustment
     - Z Launcher style scribble stroke
     - Compact app item style
 - More notification style in app info menu
-- App translation
-- App list scrollbar
-    - Waiting for the official Jetpack Compose implementation
+- Translation
+- App List scrollbar
+    - Waiting for the official Compose implementation.
 
 ### User Suggested Features & Improvements (might not be implemented)
 
-- Customizable font & font size
+- Customizable font size
 - App list grid view (it will break the current UI pattern, some stuff will have to change before it's possible to be implemented.)
 - Scrollable widget page
 - Extended alias management
@@ -97,18 +97,31 @@ date: 2026-07-30
 ### Version 1.14 (TBD)
 
 - New Features
-    - Pinned Shortcut support
-    - Hardware keyboard support
-
-- Changes
-    - Separate Task for setting menu
-        - Setting screen is its own task, you can now switching between setting menu and home screen freely.
-    - Screen rotation is now always unlocked on device with minimum screen width >= 600dp.
+    - Shortcut Pinning
+        - Pinned Shortcuts behave the same as apps and contacts, they use the same suggestion rating system, can be scribble searched or pinned onto Quick Launch.
+        - The full list of them are shown on the top of the app list, sorted by their package name then their display name.
+        - Alias is not supported for now since most app allow you to set custom name at creation time already.
+    - Hardware Keyboard support
+        - You can now use physical keyboard to input scribble search query and control home pages, including launching items through key combinations.
+        - For detail usage, launch the Keyboard Shortcuts Helper by pressing `Meta` + `/`.
 
 - New Customizations
-    - Fully customizable UI color
-    - Material3 UI color
-    - Analog Clock Toggle *(some folks want this apparently)*
+    - Custom Font
+        - You can now import OTF or TTF font file to set UI font.
+        - To set a custom font, go to `Settings` → `Customizations` → `Font`.
+    - More customizations under `Settings` → `Customizations` → `UI Visual`
+        - Fully customizable UI color, including Material You auto coloring.
+        - Added Analog Clock toggle.
+
+- Changes
+    - Setting Menu Revamped
+        - Setting Menu is now a separated task from the home screen, you can now switch them back & forth without reopening the layers of the menu.
+        - Menu hierarchy reorganized, UI element placement settings are moved under `Settings` → `Customizations` → `Screen Layout`.
+        - Some menu are renamed, simplified or updated completely.
+        - Removed the experimental UI Editor menu.
+    - Target SDK bumped to 37.
+    - Rotation Lock is now always unlocked for devices with minimum width >= 600dp *(i.e. tablets &amp; other large screen devices)*.
+    - Visual adjustment on all dialogs.
 
 ### Version 1.13 (2025-09-27)
 
