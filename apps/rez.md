@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-08-25
+date: 2026-08-31
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -122,6 +122,11 @@ date: 2026-08-25
     - Target SDK bumped to 37.
     - Rotation Lock is now always unlocked for devices with minimum width >= 600dp *(i.e. tablets &amp; other large screen devices)*.
     - Visual adjustment on all dialogs.
+
+### Version 1.13-r1 (2026-08-24)
+
+- Changes:
+    - Added trigger for displaying Accessibility Service Disclosure Dialog in the onboarding screen because Google decided that "user going into setting to turn on an optional feature" doesn't count as "normal usage".
 
 ### Version 1.13 (2025-09-27)
 
