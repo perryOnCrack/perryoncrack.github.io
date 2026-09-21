@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-08-31
+date: 2026-09-21
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -122,6 +122,10 @@ date: 2026-08-31
     - Target SDK bumped to 37.
     - Rotation Lock is now always unlocked for devices with minimum width >= 600dp *(i.e. tablets &amp; other large screen devices)*.
     - Visual adjustment on all dialogs.
+    - Refactored how search highlighting works.
+        - New item highlighting is now a separated tag from aliases.
+        - Minor optimization to the search function.
+    - Other background changes.
 
 ### Version 1.13-r1 (2026-08-24)
 
