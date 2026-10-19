@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-09-21
+date: 2026-10-19
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -14,15 +14,9 @@ date: 2026-09-21
 
 ## Development Status
 
-## In Beta
+## In Development
 
-- Setting menu refactor
-- Pinned shortcut
-- Hardware keyboard support
-- More Customizations
-    - Hide Analog Clock
-    - Fully customizable UI color
-    - Customizable font
+- More notification style in app info menu & notification refactor
 
 ### Planned features
 
@@ -38,7 +32,6 @@ date: 2026-09-21
     - Home screen vertical placement adjustment
     - Z Launcher style scribble stroke
     - Compact app item style
-- More notification style in app info menu
 - Translation
 - App List scrollbar
     - Waiting for the official Compose implementation.
@@ -50,6 +43,7 @@ date: 2026-09-21
 - Scrollable widget page
 - Extended alias management
 - Scribble area edge margin for swiping between pages 
+- Wallpaper centering control
 
 ### Some ideas of mine (might not be implemented as well)
 
@@ -94,16 +88,16 @@ date: 2026-09-21
 
 ## Changelogs
 
-### Version 1.14 (TBD)
+### Version 1.14 (2026-10-21)
 
 - New Features
     - Shortcut Pinning
-        - Pinned Shortcuts behave the same as apps and contacts, they use the same suggestion rating system, can be scribble searched or pinned onto Quick Launch.
+        - Pinned Shortcuts behave the same as apps and contacts: use the same suggestion rating system & can be scribble searched or pinned onto Quick Launch.
         - The full list of them are shown on the top of the app list, sorted by their package name then their display name.
         - Alias is not supported for now since most app allow you to set custom name at creation time already.
-    - Hardware Keyboard support
-        - You can now use physical keyboard to input scribble search query and control home pages, including launching items through key combinations.
-        - For detail usage, launch the Keyboard Shortcuts Helper by pressing `Meta` + `/`.
+    - Hardware keyboard support
+        - You can now use physical keyboard to input search query and control home pages, including launching items through key combinations.
+        - For detail usage, check the Keyboard Shortcuts Helper by pressing `Meta` + `/`.
 
 - New Customizations
     - Custom Font
@@ -120,12 +114,15 @@ date: 2026-09-21
         - Some menu are renamed, simplified or updated completely.
         - Removed the experimental UI Editor menu.
     - Target SDK bumped to 37.
-    - Rotation Lock is now always unlocked for devices with minimum width >= 600dp *(i.e. tablets &amp; other large screen devices)*.
-    - Visual adjustment on all dialogs.
-    - Refactored how search highlighting works.
+    - Rotation Lock is now always unlocked for devices with minimum width >= 600dp *(i.e. tablets & other large screen devices)*.
+    - Visual adjustment & unification on all dialogs.
+    - Refactored search highlighting.
         - New item highlighting is now a separated tag from aliases.
         - Minor optimization to the search function.
     - Other background changes.
+
+- Bug Fixes
+    - Profile selector in app list didn't scale properly with system font size.
 
 ### Version 1.13-r1 (2026-08-24)
 
