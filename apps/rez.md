@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-10-19
+date: 2026-10-20
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -81,14 +81,12 @@ date: 2026-10-19
 
 - Widget delete button is out of bound when the widget is filling the whole screen.
 - Contact list can't be retrieved in some devices.
-- Quick Launch can sometime bugged out when opening it.
-    - Should be fixed in the next release.
 
 ---
 
 ## Changelogs
 
-### Version 1.14 (2026-10-21)
+### Version 1.14 (2026-10-20)
 
 - New Features
     - Shortcut Pinning
