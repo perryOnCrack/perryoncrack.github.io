@@ -3,7 +3,7 @@ permalink: /apps/rez
 layout: post
 categories: Android
 title: ReZ Launcher
-date: 2026-10-20
+date: 2026-11-01
 ---
 
 [![Get it on Google Play](/assets/images/projects/rez-banner-trans-back.png){: height="120"}](https://play.google.com/store/apps/details?id=com.perryoncrack.rez&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1)
@@ -85,6 +85,11 @@ date: 2026-10-20
 ---
 
 ## Changelogs
+
+### Version 1.14-fix1 (2026-11-01)
+
+- Bug Fixes
+    - Fixed an issue where scribbling would sometimes crash the launcher.
 
 ### Version 1.14 (2026-10-20)
 
